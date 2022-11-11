@@ -21,10 +21,10 @@ class MCViewController: UIViewController {
     setupViewStyle()
   }
   
-  open func setupObserver() { }
-  open func setupViewStyle() { }
+  func setupObserver() { }
+  func setupViewStyle() { }
   
-  open func addKeyValueObserverList(_ observer: [NSKeyValueObservation]) {
+  func addKeyValueObserverList(_ observer: [NSKeyValueObservation]) {
     keyValueObserverList.append(contentsOf: observer)
   }
 

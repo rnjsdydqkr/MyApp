@@ -1,0 +1,55 @@
+//
+//  ViewController.swift
+//  MyApp
+//
+//  Created by 박권용 on 2022/04/29.
+//
+
+import UIKit
+
+class RootViewController: MCViewController {
+  
+  let viewModel = RootViewModel()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+  }
+  
+  override func setupObserver() {
+    addKeyValueObserverList([
+      viewModel.output.observe(\.errorMessage) { [weak self] output, _ in
+        
+      },
+      viewModel.output.observe(\.needLoading, changeHandler: { [weak self] output, _ in
+        
+      })
+    ])
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) { [weak self] in
+      self?.changeScreen()
+    }
+  }
+  
+  func changeScreen() {
+//    if isLogged {
+////      RootViewControllerProvider.shared.changeRootViewController(.login)
+//      guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as? MainViewController else { return }
+//      RootViewControllerProvider.shared.changeRootViewController(mainVC, animated: false)
+//    } else {
+////      RootViewControllerProvider.shared.changeRootViewController(.main)
+//      guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController else { return }
+//      RootViewControllerProvider.shared.changeRootViewController(loginVC, animated: false)
+//    }
+  }
+  
+}
+
