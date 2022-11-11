@@ -8,9 +8,6 @@
 import UIKit
 
 class RootViewControllerProvider {
-  enum ViewControllerType {
-    case permission, login, main
-  }
   static let shared = RootViewControllerProvider()
   
   func changeRootViewController (_ viewController: ViewControllerType) {
@@ -22,9 +19,9 @@ class RootViewControllerProvider {
     case .permission:
       break
     case .login:
-      changeVC = mainStoryBoard.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController
+      changeVC = mainStoryBoard.instantiateViewController(withIdentifier: StoryboardIdentifierType.login.rawValue) as? LoginViewController
     case .main:
-      changeVC = mainStoryBoard.instantiateViewController(withIdentifier: "mainViewController") as? MainViewController
+      changeVC = mainStoryBoard.instantiateViewController(withIdentifier: StoryboardIdentifierType.main.rawValue) as? MainViewController
     }
     
     guard let targetVC = changeVC else { return }
