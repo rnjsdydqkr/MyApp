@@ -9,7 +9,8 @@ import Foundation
 
 class RootViewModel: NSObject, MCViewModelProtocol {
   struct Input {
-    
+    var isPermissed: Bool = false
+    var isLogged: Bool = false
   }
   
   @objcMembers
@@ -21,5 +22,15 @@ class RootViewModel: NSObject, MCViewModelProtocol {
   let service = MainService()
   var input = Input()
   var output = Output()
+  
+  func changeScreen() {
+    if !input.isPermissed {
+      RootViewControllerProvider.shared.changeRootViewController(.permission)
+    } else if input.isLogged {
+      RootViewControllerProvider.shared.changeRootViewController(.main)
+    } else {
+      RootViewControllerProvider.shared.changeRootViewController(.login)
+    }
+  }
   
 }

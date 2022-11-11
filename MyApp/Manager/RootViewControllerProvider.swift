@@ -13,24 +13,24 @@ class RootViewControllerProvider {
   }
   static let shared = RootViewControllerProvider()
   
-  func changeRootViewController (_ viewController: MCViewController, animated: Bool) {
+  func changeRootViewController (_ viewController: ViewControllerType) {
     
-    var changeVC: UIViewController?
+    var changeVC: MCViewController?
+    let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
 
-//    switch viewController {
-//    case .permission:
-//      break
-//    case .login:
-//      guard let changeVC = self.storyboard?.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController else { return }
-//    case .main:
-//      guard let changeVC = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as? MainViewController else { return }
-//    }
-//    
-    let sceneDelegate = UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
-    sceneDelegate.window!.rootViewController = viewController
+    switch viewController {
+    case .permission:
+      break
+    case .login:
+      changeVC = mainStoryBoard.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController
+    case .main:
+      changeVC = mainStoryBoard.instantiateViewController(withIdentifier: "mainViewController") as? MainViewController
+    }
+    
+    guard let targetVC = changeVC else { return }
+    
+    let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+    sceneDelegate?.changeRootNavigationController(targetVC)
   }
-  
-//  guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-//  guard let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else { return }
   
 }

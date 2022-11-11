@@ -13,7 +13,8 @@ class RootViewController: MCViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    viewModel.input.isPermissed = true
+    viewModel.input.isLogged = false
   }
   
   override func setupObserver() {
@@ -35,20 +36,8 @@ class RootViewController: MCViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) { [weak self] in
-      self?.changeScreen()
+      self?.viewModel.changeScreen()
     }
-  }
-  
-  func changeScreen() {
-//    if isLogged {
-////      RootViewControllerProvider.shared.changeRootViewController(.login)
-//      guard let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as? MainViewController else { return }
-//      RootViewControllerProvider.shared.changeRootViewController(mainVC, animated: false)
-//    } else {
-////      RootViewControllerProvider.shared.changeRootViewController(.main)
-//      guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController else { return }
-//      RootViewControllerProvider.shared.changeRootViewController(loginVC, animated: false)
-//    }
   }
   
 }

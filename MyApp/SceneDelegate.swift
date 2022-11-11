@@ -49,6 +49,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // Save changes in the application's managed object context when the application transitions to the background.
     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
   }
+  
+  func changeRootNavigationController(_ vc: MCViewController,
+                    transitionDuration: TimeInterval = 0.3,
+                    transitionStyle: UIView.AnimationOptions = .transitionCrossDissolve) {
+    guard let window = self.window else { return }
+    window.rootViewController = vc
+    
+    UIView.transition(with: window, duration: transitionDuration, options: transitionStyle, animations: nil)
+  }
 
 
 }
