@@ -11,8 +11,30 @@ enum ViewControllerType {
   case permission, login, main
 }
 
-enum StoryboardIdentifierType: String {
-  case permission = ""
-  case login = "loginViewController"
-  case main = "mainViewController"
+enum StoryboardNameType {
+  case main
+  
+  var name: String {
+    switch self {
+    case .main:
+      return "Main"
+    }
+  }
+}
+
+enum StoryboardIdentifierType {
+  case permission
+  case login
+  case main
+  
+  var name: String {
+    switch self {
+    case .permission:
+      return ""
+    case .login:
+      return "loginViewController"
+    case .main:
+      return "mainViewController"
+    }
+  }
 }
