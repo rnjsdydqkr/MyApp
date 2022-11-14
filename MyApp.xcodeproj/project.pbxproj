@@ -38,7 +38,7 @@
 		943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */; };
 		943222CF281D620E00D63DB2 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CE281D620E00D63DB2 /* MainAPI.swift */; };
 		94EF08A4291E14D0000F0B8B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A3291E14D0000F0B8B /* RootViewModel.swift */; };
-		94EF08A8291E4452000F0B8B /* RootViewControllerProvider+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* RootViewControllerProvider+Additions.swift */; };
+		94EF08A8291E4452000F0B8B /* Storyboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */; };
 		EC5AFE70B012226D800E8729 /* Pods_MyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29436BF4D0AAFAB5B4E8D00 /* Pods_MyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +97,7 @@
 		943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Parameters.swift"; sourceTree = "<group>"; };
 		943222CE281D620E00D63DB2 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
 		94EF08A3291E14D0000F0B8B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		94EF08A7291E4452000F0B8B /* RootViewControllerProvider+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewControllerProvider+Additions.swift"; sourceTree = "<group>"; };
+		94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Additions.swift"; sourceTree = "<group>"; };
 		95BF492C4FE6D8B7A35C4A22 /* Pods-MyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyAppTests/Pods-MyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B29436BF4D0AAFAB5B4E8D00 /* Pods_MyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81821CC53A6145C9080C431 /* Pods_MyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,11 +177,11 @@
 				94EF08A12919DAD2000F0B8B /* features */,
 				94322289281BB40200D63DB2 /* Login */,
 				94322285281BA6AE00D63DB2 /* Main */,
-				94322293281BCDCB00D63DB2 /* resource */,
-				943222C4281D405C00D63DB2 /* SLRepository */,
 				9432224A281B937000D63DB2 /* AppDelegate.swift */,
 				9432224C281B937000D63DB2 /* SceneDelegate.swift */,
 				94EF08A2291E148C000F0B8B /* Root */,
+				94322293281BCDCB00D63DB2 /* resource */,
+				943222C4281D405C00D63DB2 /* SLRepository */,
 				94322250281B937000D63DB2 /* Main.storyboard */,
 				94322256281B937300D63DB2 /* Assets.xcassets */,
 				94322258281B937300D63DB2 /* LaunchScreen.storyboard */,
@@ -328,7 +328,7 @@
 		94EF08A6291E437F000F0B8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				94EF08A7291E4452000F0B8B /* RootViewControllerProvider+Additions.swift */,
+				94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -604,7 +604,7 @@
 				94322290281BC57D00D63DB2 /* MainService.swift in Sources */,
 				943222C3281D360B00D63DB2 /* MainModel.swift in Sources */,
 				9432224D281B937000D63DB2 /* SceneDelegate.swift in Sources */,
-				94EF08A8291E4452000F0B8B /* RootViewControllerProvider+Additions.swift in Sources */,
+				94EF08A8291E4452000F0B8B /* Storyboard+Additions.swift in Sources */,
 				943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */,
 				9432228E281BC2D700D63DB2 /* MVVMProtocol.swift in Sources */,
 			);

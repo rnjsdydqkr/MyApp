@@ -53,7 +53,7 @@ public class APIProvider {
     return (URL(string: apiRouter.url)!, apiRouter.header, apiRouter.method, apiRouter.parameter?.dictionary)
   }
   
-  func requestAuthAPIModule<Response: APIResponseProtocol>(api: APIProtocol,
+  func requestAPIModule<Response: APIResponseProtocol>(api: APIProtocol,
                                                                           callback: @escaping (Response?, APIError?) -> Void) {
     let (url, header, method, parameter) = makeURL(apiRouter: api)
     
@@ -62,39 +62,24 @@ public class APIProvider {
                  method: method,
                  parameters: parameter,
                  encoding: JSONEncoding.default,
-                 headers: header).responseData { (response) in
+                 headers: header).responseDecodable(of: Response.self) { (response) in
         switch response.result {
-          case .success(let data):
-          print("url: \(response.request?.url?.absoluteString ?? "")\nparam:\(String(describing: parameter)) \nres: \(String(data: data, encoding: .utf8) ?? "") ")
-            if let JSONString = String(data: data, encoding: .utf8) {
-              print("requestAuthAPIModule==================")
-              print(JSONString)
-            }
-            let decoder = JSONDecoder()
-            do {
-              
-              let error = try decoder.decode(APIError.self, from: data)
-              
-              guard error.isSuccessed else {
-                callback(nil, error)
-                
-                return
-              }
-              
-              decoder.dateDecodingStrategy = .formatted(DateFormatter.cartDateLocalFormat)
-              let parsedData = try decoder.decode(Response.self, from: data)
-              callback(parsedData, nil)
-            } catch let error {
-              print("\(error)")
-              callback(nil, APIError(statusCode: "Parse_Error", statusMsg: error.localizedDescription))
-            }
+          case .success(let DecodableData):
+            debugPrint("respAPIModule==================")
+            debugPrint("[DecodableData]\n\(DecodableData)")
+            debugPrint("===============================")
+            
+            callback(DecodableData, nil)
+          
           case .failure(let error):
-            print("url: \(response.request?.url?.absoluteString ?? ""), res: \(error.errorDescription ?? "") ")
+            debugPrint("respErrorAPIModule============")
+            debugPrint("url: \(response.request?.url?.absoluteString ?? ""), error: \(error.errorDescription ?? "") ")
+            debugPrint("==============================")
             switch error {
-              case .sessionTaskFailed(let urlError as URLError) where urlError.code == .timedOut:
-                callback(nil, APIError(statusCode: String(response.response?.statusCode ?? 9999), statusMsg: "Request timeout!!"))
-              default:
-                callback(nil, APIError(statusCode: String(response.response?.statusCode ?? 0), statusMsg: error.localizedDescription))
+            case .sessionTaskFailed(let urlError as URLError) where urlError.code == .timedOut:
+              callback(nil, APIError(statusCode: String(response.response?.statusCode ?? 9999), statusMsg: "Request timeout!!"))
+            default:
+              callback(nil, APIError(statusCode: String(response.response?.statusCode ?? 0), statusMsg: error.localizedDescription))
             }
             
         }
@@ -105,21 +90,9 @@ public class APIProvider {
   
 }
 
-
 extension APIProvider {
   public func requestMainList(userId: String, name: String, onComplete: @escaping(MainResponse?, APIError?) -> Void) {
-    requestAuthAPIModule(api: MainAPI.search(userId: userId, name: name), callback: onComplete)
+    requestAPIModule(api: MainAPI.search(userId: userId, name: name), callback: onComplete)
   }
   
-}
-
-extension DateFormatter {
-  public static let cartDateLocalFormat: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-    formatter.calendar = Calendar(identifier: .gregorian)
-    formatter.timeZone = TimeZone.autoupdatingCurrent
-    formatter.locale = Locale(identifier: "en_US_POSIX")
-    return formatter
-  }()
 }
