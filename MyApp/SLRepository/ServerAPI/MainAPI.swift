@@ -13,7 +13,10 @@ enum MainAPI: APIProtocol {
 
 extension MainAPI {
   var header: HTTPHeaders {
-    return getHeader()
+    switch self {
+    case .search(userId: _, name: _):
+      return getHeader()
+    }
   }
   
   var url: String {

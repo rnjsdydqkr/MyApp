@@ -14,10 +14,10 @@ let APIURL = "http://swiftapi.rubypaper.co.kr:2029"
 
 public protocol APIProtocol {
   var baseURL: String { get }
-  var method: HTTPMethod { get }
-  var header: HTTPHeaders { get }
   var url: String { get }
+  var method: HTTPMethod { get }
   var parameter: Codable? { get }
+  var header: HTTPHeaders { get }
 }
 
 extension APIProtocol {
@@ -48,14 +48,13 @@ public class APIProvider {
   
   private let networkOperationQueue: OperationQueue = OperationQueue()
   
-  fileprivate func makeURL(apiRouter: APIProtocol) -> (URL, HTTPHeaders, HTTPMethod, Parameters?) {
-    
-    return (URL(string: apiRouter.url)!, apiRouter.header, apiRouter.method, apiRouter.parameter?.dictionary)
+  fileprivate func makeURL(apiRouter: APIProtocol) -> (URL, HTTPMethod, Parameters?, HTTPHeaders) {
+    return (URL(string: apiRouter.url)!, apiRouter.method, apiRouter.parameter?.dictionary, apiRouter.header)
   }
   
   func requestAPIModule<Response: APIResponseProtocol>(api: APIProtocol,
-                                                                          callback: @escaping (Response?, APIError?) -> Void) {
-    let (url, header, method, parameter) = makeURL(apiRouter: api)
+                                                       callback: @escaping (Response?, APIError?) -> Void) {
+    let (url, method, parameter, header) = makeURL(apiRouter: api)
     
     let operation = BlockOperation {
       AF.request(url,
@@ -91,8 +90,8 @@ public class APIProvider {
 }
 
 extension APIProvider {
-  public func requestMainList(userId: String, name: String, onComplete: @escaping(MainResponse?, APIError?) -> Void) {
-    requestAPIModule(api: MainAPI.search(userId: userId, name: name), callback: onComplete)
+  public func requestMainList(userId: String, name: String, callback: @escaping(MainResponse?, APIError?) -> Void) {
+    requestAPIModule(api: MainAPI.search(userId: userId, name: name), callback: callback)
   }
   
 }

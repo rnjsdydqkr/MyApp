@@ -10,13 +10,13 @@ import Foundation
 class MainService: MCServiceProtocol {
   private let repository = MainRepository()
   
-  func requestMainList(userId: String, name: String, onComplete: @escaping ((MainResponse?, String?) -> Void)) {
+  func requestMainList(userId: String, name: String, onCompleted: @escaping ((MainResponse?, APIError?) -> Void)) {
     repository.requestMainList(userId: userId, name: name) { response, error in
       guard let resp = response else {
-        return onComplete(nil, error?.getErrorMessage(curLang: I18N.currLang) ?? "")
+        return onCompleted(nil, error)
       }
       print("respresp: \(resp)")
-      return onComplete(resp, nil)
+      return onCompleted(resp, nil)
     }
   }
   
