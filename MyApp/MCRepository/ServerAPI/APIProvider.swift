@@ -24,12 +24,12 @@ extension APIProtocol {
     var APIURL = ""
     switch BuildTargetType(buildTarget) {
     case .dev:
-      APIURL = BuildTargetType.prod.url
-//      APIURL = BuildTargetType.dev.url
+      APIURL = BuildTargetType.dev.url
     case .test:
+      APIURL = BuildTargetType.test.url
+    case .prod:
       APIURL = BuildTargetType.prod.url
-//      APIURL = BuildTargetType.test.url
-    default:
+    case .none:
       APIURL = BuildTargetType.prod.url
     }
     return APIURL

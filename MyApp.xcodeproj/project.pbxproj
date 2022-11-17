@@ -166,9 +166,9 @@
 		943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Parameters.swift"; sourceTree = "<group>"; };
 		943222CE281D620E00D63DB2 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
 		94D9772629246CF40040B506 /* MyApp DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94D9772729246CF50040B506 /* MyApp DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyApp DEV-Info.plist"; path = "/Users/gwonyong/dev/IOSProject/MyApp/MyApp/metadata/MyApp DEV-Info.plist"; sourceTree = "<absolute>"; };
+		94D9772729246CF50040B506 /* MyApp DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp DEV-Info.plist"; sourceTree = "<group>"; };
 		94D9777429246FDD0040B506 /* MyApp TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp TEST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94D9777529246FDE0040B506 /* MyApp TEST-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyApp TEST-Info.plist"; path = "/Users/gwonyong/dev/IOSProject/MyApp/MyApp/metadata/MyApp TEST-Info.plist"; sourceTree = "<absolute>"; };
+		94D9777529246FDE0040B506 /* MyApp TEST-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp TEST-Info.plist"; sourceTree = "<group>"; };
 		94D977772924C8DC0040B506 /* Repository+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Additions.swift"; sourceTree = "<group>"; };
 		94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Extensions.swift"; sourceTree = "<group>"; };
 		94EF08A3291E14D0000F0B8B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
@@ -480,6 +480,7 @@
 				94322243281B937000D63DB2 /* Sources */,
 				94322244281B937000D63DB2 /* Frameworks */,
 				94322245281B937000D63DB2 /* Resources */,
+				F3AB73EA98CFC9106342ECDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -517,6 +518,7 @@
 				94322266281B937300D63DB2 /* Sources */,
 				94322267281B937300D63DB2 /* Frameworks */,
 				94322268281B937300D63DB2 /* Resources */,
+				E7B8DF647F0EBA986219E712 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -772,6 +774,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7B8DF647F0EBA986219E712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp-MyAppUITests/Pods-MyApp-MyAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp-MyAppUITests/Pods-MyApp-MyAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp-MyAppUITests/Pods-MyApp-MyAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3AB73EA98CFC9106342ECDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1113,7 +1149,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pky.MyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1134,7 +1170,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pky.MyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
