@@ -19,7 +19,7 @@ public protocol APIProtocol {
 
 extension APIProtocol {
   var baseURL: String {
-    return buildConfiguration()
+    return getBuildConfigurationBaseURL()
   }
   
   var method: HTTPMethod {
@@ -39,7 +39,7 @@ extension APIProtocol {
     return header
   }
   
-  fileprivate func buildConfiguration() -> String {
+  fileprivate func getBuildConfigurationBaseURL() -> String {
     let buildTarget = (Bundle.main.bundleIdentifier?.components(separatedBy: ".").last ?? BuildTargetType.prod.name)
     switch BuildTargetType(buildTarget) {
     case .dev:
