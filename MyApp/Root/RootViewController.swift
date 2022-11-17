@@ -14,7 +14,8 @@ class RootViewController: MCViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     viewModel.input.isPermissed = true
-    viewModel.input.isLogged = false
+    // FIXME 초기 화면 진입 테스트 코드
+    viewModel.input.isLogged = true
   }
   
   override func setupObserver() {

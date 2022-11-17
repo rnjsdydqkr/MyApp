@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "startLabel"; ObjectID = "NeW-lf-brv"; */
+"NeW-lf-brv.text" = "startLabel";
+
+/* Class = "UIButton"; configuration.title = "thirdString"; ObjectID = "PMh-sm-RB3"; */
+"PMh-sm-RB3.configuration.title" = "thirdString";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PMh-sm-RB3"; */
+"PMh-sm-RB3.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "firstString"; ObjectID = "X7g-H8-O4X"; */
+"X7g-H8-O4X.configuration.title" = "firstString";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "X7g-H8-O4X"; */
+"X7g-H8-O4X.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "loginScreen"; ObjectID = "bcv-kD-OrQ"; */
+"bcv-kD-OrQ.text" = "loginScreen";
+
+/* Class = "UIButton"; configuration.title = "secondString"; ObjectID = "euU-Q0-AJB"; */
+"euU-Q0-AJB.configuration.title" = "secondString";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "euU-Q0-AJB"; */
+"euU-Q0-AJB.normalTitle" = "Button";

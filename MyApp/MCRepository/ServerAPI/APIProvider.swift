@@ -9,8 +9,7 @@ import Foundation
 
 import Alamofire
 
-let APIURL = "http://swiftapi.rubypaper.co.kr:2029"
-//let APIURL = "0.0.0.0:3000"
+let buildTarget = (Bundle.main.bundleIdentifier?.components(separatedBy: ".").last ?? BuildTargetType.prod.name)
 
 public protocol APIProtocol {
   var baseURL: String { get }
@@ -22,6 +21,17 @@ public protocol APIProtocol {
 
 extension APIProtocol {
   var baseURL: String {
+    var APIURL = ""
+    switch BuildTargetType(buildTarget) {
+    case .dev:
+      APIURL = BuildTargetType.prod.url
+//      APIURL = BuildTargetType.dev.url
+    case .test:
+      APIURL = BuildTargetType.prod.url
+//      APIURL = BuildTargetType.test.url
+    default:
+      APIURL = BuildTargetType.prod.url
+    }
     return APIURL
   }
   
