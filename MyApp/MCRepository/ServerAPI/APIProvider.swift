@@ -172,7 +172,7 @@ extension DateFormatter {
     formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
     formatter.calendar = Calendar(identifier: .gregorian)
     formatter.timeZone = TimeZone.autoupdatingCurrent
-    formatter.locale = Locale(identifier: "en_US_POSIX")
+    formatter.locale = Locale(identifier: "ko_KR")
     return formatter
   }()
 }
