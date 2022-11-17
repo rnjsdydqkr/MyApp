@@ -9,8 +9,6 @@ import Foundation
 
 import Alamofire
 
-let buildTarget = (Bundle.main.bundleIdentifier?.components(separatedBy: ".").last ?? BuildTargetType.prod.name)
-
 public protocol APIProtocol {
   var baseURL: String { get }
   var url: String { get }
@@ -21,18 +19,7 @@ public protocol APIProtocol {
 
 extension APIProtocol {
   var baseURL: String {
-    var APIURL = ""
-    switch BuildTargetType(buildTarget) {
-    case .dev:
-      APIURL = BuildTargetType.dev.url
-    case .test:
-      APIURL = BuildTargetType.test.url
-    case .prod:
-      APIURL = BuildTargetType.prod.url
-    case .none:
-      APIURL = BuildTargetType.prod.url
-    }
-    return APIURL
+    return buildConfiguration()
   }
   
   var method: HTTPMethod {
@@ -50,6 +37,20 @@ extension APIProtocol {
     header.add(name: "Content-Type", value: "application/json")
     header.add(name: "userKey", value: "QWxhZGRpbjpvcGVuIHNlc2FtZQ==")
     return header
+  }
+  
+  fileprivate func buildConfiguration() -> String {
+    let buildTarget = (Bundle.main.bundleIdentifier?.components(separatedBy: ".").last ?? BuildTargetType.prod.name)
+    switch BuildTargetType(buildTarget) {
+    case .dev:
+      return BuildTargetType.dev.url
+    case .test:
+      return BuildTargetType.test.url
+    case .prod:
+      return BuildTargetType.prod.url
+    case .none:
+      return BuildTargetType.prod.url
+    }
   }
 }
 

@@ -12,12 +12,6 @@ enum MainAPI: APIProtocol {
 }
 
 extension MainAPI {
-  var header: HTTPHeaders {
-    switch self {
-    case .search(userId: _, name: _):
-      return getHeader()
-    }
-  }
   
   var url: String {
     switch self {
@@ -26,12 +20,24 @@ extension MainAPI {
     }
   }
   
+  var method: HTTPMethod {
+    return .post
+  }
+  
   var parameter: Codable? {
     switch self {
       case .search(userId: let userId, name: let name):
         return MainSearchParameter(userId: userId, name: name)
     }
   }
+  
+  var header: HTTPHeaders {
+    switch self {
+    case .search(userId: _, name: _):
+      return getHeader()
+    }
+  }
+  
 }
 
 struct MainSearchParameter: Codable {
