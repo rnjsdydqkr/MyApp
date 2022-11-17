@@ -28,7 +28,7 @@ enum BuildTargetType {
     case .test:
       return "http://swiftapi.rubypaper-test.co.kr:2029"
     case .prod:
-      return "http://swiftapi.rubypaper.co.kr:2029"
+      return "https://api.themoviedb.org"
     }
   }
 }

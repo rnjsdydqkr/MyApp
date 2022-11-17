@@ -6,8 +6,6 @@
 //
 
 import Foundation
-// TODO 테스트 코드
-import Alamofire
 
 class MainViewModel: NSObject, MCViewModelProtocol {
   
@@ -31,13 +29,25 @@ class MainViewModel: NSObject, MCViewModelProtocol {
   
   func requestMainList() {
     output.needLoading = true
-    service.requestMainList(userId: "park0820", name: "박권용") { [weak self] model, error in
+    service.requestMainList(userId: "park0820", name: "박권용") { [weak self] response, error in
       self?.output.needLoading = false
-      guard let mainModel = model else {
-//        return self?.output.errorMessage = mainModel.errorMessage ?? ""
+      guard let model = response else {
+        self?.output.errorMessage = error?.statusMsg ?? ""
         return
       }
-      print("mainModelmainModel: \(mainModel)")
+      debugPrint("[MainViewModel] requestMainList : \(model)")
+    }
+  }
+  
+  func requestPopularMovieInfo() {
+    output.needLoading = true
+    service.requestPopularMovieInfo() { [weak self] response, error in
+      self?.output.needLoading = false
+      guard let model = response else {
+        self?.output.errorMessage = error?.statusMsg ?? ""
+        return
+      }
+      debugPrint("[MainViewModel] requestPopularMovieInfo : \(model)")
     }
   }
   

@@ -8,15 +8,18 @@
 import Alamofire
 
 enum MainAPI: APIProtocol {
-  case search(userId: String, name: String)
+  case mainList(userId: String, name: String)
+  case popularMovieInfo
 }
 
 extension MainAPI {
   
   var url: String {
     switch self {
-    case .search:
+    case .mainList:
       return "\(baseURL)/practice/echoJSON"
+    case .popularMovieInfo:
+      return "\(baseURL)/3/movie/popular?api_key=9724f6ad5d569921c015684495875924"
     }
   }
   
@@ -26,21 +29,29 @@ extension MainAPI {
   
   var parameter: Codable? {
     switch self {
-      case .search(userId: let userId, name: let name):
-        return MainSearchParameter(userId: userId, name: name)
+      case .mainList(userId: let userId, name: let name):
+        return MainListParameter(userId: userId, name: name)
+    case .popularMovieInfo:
+      return PopularMovieInfoParameter()
     }
   }
   
   var header: HTTPHeaders {
     switch self {
-    case .search(userId: _, name: _):
+    case .mainList(userId: _, name: _):
+      return getHeader()
+    case .popularMovieInfo:
       return getHeader()
     }
   }
   
 }
 
-struct MainSearchParameter: Codable {
+struct MainListParameter: Codable {
   let userId: String
   var name: String
+}
+
+struct PopularMovieInfoParameter: Codable {
+  
 }

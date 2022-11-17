@@ -44,18 +44,18 @@ class MainViewController: MCViewController {
     super.viewWillAppear(animated)
     debugPrint("[MainViewController] viewWillAppear")
     
-    viewModel.requestMainList()
-    
   }
   
   @IBAction func didPressed(button: UIButton) {
     switch button {
     case firstButton:
-      viewModel.output.startString = "firstButton"
+      viewModel.output.startString = "[PROD] requestPopularMovieInfo API 호출]"
+      viewModel.requestPopularMovieInfo()
     case secondButton:
       viewModel.output.startString = "secondButton"
     case thirdButton:
-      viewModel.output.startString = "thirdButton"
+      viewModel.output.startString = "[DEV, TEST] requestMainList API 호출"
+      viewModel.requestMainList()
     default:
       debugPrint("[MainViewController] didPressed default")
     }

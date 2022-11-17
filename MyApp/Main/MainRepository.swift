@@ -8,11 +8,11 @@
 import Foundation
 
 class MainRepository: MCRepositoryProtocol {
-  func requestMainList(userId: String, name: String, callback: @escaping (MainResponse?, APIError?) -> Void) {
+  func requestMainList(userId: String, name: String, callback: @escaping (MainListResponse?, APIError?) -> Void) {
     APIProvider.shared.requestMainList(userId: userId, name: name, callback: callback)
   }
   
-//  func requestMainList(userId: String, name: String, onComplete: @escaping (MainModelReponse?, APIError?) -> Void) {
-//    APIProvider.shared.requestMainList(userId: userId, name: name, onComplete: onComplete)
-//  }
+  func requestPopularMovieInfo(callback: @escaping (PopularMovieInfoResponse?, APIError?) -> Void) {
+    APIProvider.shared.requestPopularMovieInfo(callback: callback)
+  }
 }

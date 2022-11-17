@@ -33,7 +33,6 @@
 		943222BC281C41CD00D63DB2 /* i18n.sh in Resources */ = {isa = PBXBuildFile; fileRef = 943222BB281C41CD00D63DB2 /* i18n.sh */; };
 		943222BE281C42CB00D63DB2 /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222BD281C42CB00D63DB2 /* I18N.swift */; };
 		943222C1281C431400D63DB2 /* CommUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C0281C431400D63DB2 /* CommUtil.swift */; };
-		943222C3281D360B00D63DB2 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C2281D360B00D63DB2 /* MainModel.swift */; };
 		943222C7281D409800D63DB2 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C6281D409800D63DB2 /* APIProvider.swift */; };
 		943222C9281D417000D63DB2 /* APIProvider+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C8281D417000D63DB2 /* APIProvider+Response.swift */; };
 		943222CB281D573500D63DB2 /* APIProvider+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CA281D573500D63DB2 /* APIProvider+Error.swift */; };
@@ -56,7 +55,6 @@
 		94D9771229246CF40040B506 /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222BD281C42CB00D63DB2 /* I18N.swift */; };
 		94D9771329246CF40040B506 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322281281BA4FF00D63DB2 /* MainViewModel.swift */; };
 		94D9771429246CF40040B506 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432228F281BC57D00D63DB2 /* MainService.swift */; };
-		94D9771529246CF40040B506 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C2281D360B00D63DB2 /* MainModel.swift */; };
 		94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432224C281B937000D63DB2 /* SceneDelegate.swift */; };
 		94D9771729246CF40040B506 /* Storyboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */; };
 		94D9771829246CF40040B506 /* APIProvider+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */; };
@@ -83,7 +81,6 @@
 		94D9776029246FDD0040B506 /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222BD281C42CB00D63DB2 /* I18N.swift */; };
 		94D9776129246FDD0040B506 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322281281BA4FF00D63DB2 /* MainViewModel.swift */; };
 		94D9776229246FDD0040B506 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432228F281BC57D00D63DB2 /* MainService.swift */; };
-		94D9776329246FDD0040B506 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C2281D360B00D63DB2 /* MainModel.swift */; };
 		94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432224C281B937000D63DB2 /* SceneDelegate.swift */; };
 		94D9776529246FDD0040B506 /* Storyboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */; };
 		94D9776629246FDD0040B506 /* APIProvider+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */; };
@@ -159,7 +156,6 @@
 		943222BB281C41CD00D63DB2 /* i18n.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = i18n.sh; sourceTree = "<group>"; };
 		943222BD281C42CB00D63DB2 /* I18N.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I18N.swift; sourceTree = "<group>"; };
 		943222C0281C431400D63DB2 /* CommUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommUtil.swift; sourceTree = "<group>"; };
-		943222C2281D360B00D63DB2 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		943222C6281D409800D63DB2 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		943222C8281D417000D63DB2 /* APIProvider+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Response.swift"; sourceTree = "<group>"; };
 		943222CA281D573500D63DB2 /* APIProvider+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Error.swift"; sourceTree = "<group>"; };
@@ -345,7 +341,6 @@
 				94322281281BA4FF00D63DB2 /* MainViewModel.swift */,
 				9432228F281BC57D00D63DB2 /* MainService.swift */,
 				94322291281BC59700D63DB2 /* MainRepository.swift */,
-				943222C2281D360B00D63DB2 /* MainModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -836,7 +831,6 @@
 				943222BE281C42CB00D63DB2 /* I18N.swift in Sources */,
 				94322282281BA4FF00D63DB2 /* MainViewModel.swift in Sources */,
 				94322290281BC57D00D63DB2 /* MainService.swift in Sources */,
-				943222C3281D360B00D63DB2 /* MainModel.swift in Sources */,
 				9432224D281B937000D63DB2 /* SceneDelegate.swift in Sources */,
 				94EF08A8291E4452000F0B8B /* Storyboard+Additions.swift in Sources */,
 				943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */,
@@ -884,7 +878,6 @@
 				94D9771229246CF40040B506 /* I18N.swift in Sources */,
 				94D9771329246CF40040B506 /* MainViewModel.swift in Sources */,
 				94D9771429246CF40040B506 /* MainService.swift in Sources */,
-				94D9771529246CF40040B506 /* MainModel.swift in Sources */,
 				94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */,
 				94D9771729246CF40040B506 /* Storyboard+Additions.swift in Sources */,
 				94D9771829246CF40040B506 /* APIProvider+Parameters.swift in Sources */,
@@ -915,7 +908,6 @@
 				94D9776029246FDD0040B506 /* I18N.swift in Sources */,
 				94D9776129246FDD0040B506 /* MainViewModel.swift in Sources */,
 				94D9776229246FDD0040B506 /* MainService.swift in Sources */,
-				94D9776329246FDD0040B506 /* MainModel.swift in Sources */,
 				94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */,
 				94D9776529246FDD0040B506 /* Storyboard+Additions.swift in Sources */,
 				94D9776629246FDD0040B506 /* APIProvider+Parameters.swift in Sources */,

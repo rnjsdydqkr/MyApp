@@ -89,7 +89,6 @@ public class APIProvider {
             let error = try decoder.decode(APIError.self, from: data)
             
             guard error.isSuccessed else {
-              if error.statusCode == nil { debugPrint("response statusCode : null") }
               callback(nil, error)
               return
             }
@@ -158,9 +157,13 @@ public class APIProvider {
 }
 
 extension APIProvider {
-  public func requestMainList(userId: String, name: String, callback: @escaping(MainResponse?, APIError?) -> Void) {
-//    requestDecodableAPIModule(api: MainAPI.search(userId: userId, name: name), callback: callback)
-    requestDataAPIModule(api: MainAPI.search(userId: userId, name: name), callback: callback)
+  public func requestMainList(userId: String, name: String, callback: @escaping(MainListResponse?, APIError?) -> Void) {
+    requestDecodableAPIModule(api: MainAPI.mainList(userId: userId, name: name), callback: callback)
+  }
+  
+  public func requestPopularMovieInfo(callback: @escaping(PopularMovieInfoResponse?, APIError?) -> Void) {
+//    requestDataAPIModule(api: MainAPI.popularMovieInfo, callback: callback)
+    requestDecodableAPIModule(api: MainAPI.popularMovieInfo, callback: callback)
   }
   
 }
