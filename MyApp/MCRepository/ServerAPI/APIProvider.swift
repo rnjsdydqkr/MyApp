@@ -40,15 +40,13 @@ extension APIProtocol {
   }
   
   fileprivate func getBuildConfigurationBaseURL() -> String {
-    let buildTarget = (Bundle.main.bundleIdentifier?.components(separatedBy: ".").last ?? BuildTargetType.prod.name)
+    let buildTarget = Bundle.main.bundleIdentifier?.components(separatedBy: ".").last ?? BuildTargetType.prod.name
     switch BuildTargetType(buildTarget) {
     case .dev:
       return BuildTargetType.dev.url
     case .test:
       return BuildTargetType.test.url
-    case .prod:
-      return BuildTargetType.prod.url
-    case .none:
+    default:
       return BuildTargetType.prod.url
     }
   }

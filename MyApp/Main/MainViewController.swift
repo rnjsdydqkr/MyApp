@@ -28,21 +28,21 @@ class MainViewController: MCViewController {
         self?.startLabel.text = output.startString
       }
     ])
-    print("setupObserver")
+    debugPrint("[MainViewController] setupObserver")
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("viewDidLoad")
+    debugPrint("[MainViewController] viewDidLoad")
   }
   
   override func setupViewStyle() {
-    print("setupViewStyle")
+    debugPrint("[MainViewController] setupViewStyle")
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    print("viewWillAppear")
+    debugPrint("[MainViewController] viewWillAppear")
     
     viewModel.requestMainList()
     
@@ -57,7 +57,7 @@ class MainViewController: MCViewController {
     case thirdButton:
       viewModel.output.startString = "thirdButton"
     default:
-      print("default")
+      debugPrint("[MainViewController] didPressed default")
     }
   }
 
