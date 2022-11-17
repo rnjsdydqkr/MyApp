@@ -8,10 +8,10 @@
 import Foundation
 
 public protocol APIResponseProtocol: Codable {
-  var statusCode: String {
+  var statusCode: String? {
     get set
   }
-  var statusMsg: String {
+  var statusMsg: String? {
     get set
   }
 }
@@ -28,8 +28,8 @@ extension APIResponseProtocol {
 }
 
 public struct MainResponse: APIResponseProtocol {
-  public var statusMsg: String
-  public var statusCode: String
+  public var statusMsg: String?
+  public var statusCode: String?
   
   public var userData: UserDataModel?
   public var title: String?

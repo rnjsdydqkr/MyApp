@@ -41,44 +41,4 @@ class MainViewModel: NSObject, MCViewModelProtocol {
     }
   }
   
-  // TODO 테스트 코드
-  func requestMainListAPI() {
-    // 1. 전송할 값 준비
-    let userId = "park0820"
-    let name = "박권용"
-    let param = [
-      "userId" : userId,
-      "name": name
-    ]
-    
-    guard let url = URL(string: "http://swiftapi.rubypaper.co.kr:2029/practice/echoJSON") else { return }
-    
-    let header: HTTPHeaders = [
-      "Content-Type": "application/json",
-      "Content-Length": "\(param.count)"
-    ]
-    
-    AF.request(url, method: .post, parameters: param, encoding: JSONEncoding.default, headers: header).responseData { (response) in
-      switch response.result {
-        case .success(let data):
-          print("url: \(response.request?.url?.absoluteString ?? ""), param: \(String(data: response.request?.httpBody ?? Data(), encoding: .utf8) ?? ""), res: \(String(data: data, encoding: .utf8) ?? "") ")
-          if let JSONString = String(data: data, encoding: .utf8) {
-            print("requestAPIModule==================")
-            print(JSONString)
-          }
-          let decoder = JSONDecoder()
-//          do {
-//            let parsedData = try decoder.decode(CArtResponse.self, from: data)
-//            callback(parsedData)
-//          } catch let error {
-//            callback(DefaultResponse(statusCode: "Parse_Error", statusMsg: error.localizedDescription) as! CArtResponse)
-//          }
-        case .failure(let error):
-        print("url: \(response.request?.url?.absoluteString ?? ""), param: \(String(data: response.request?.httpBody ?? Data(), encoding: .utf8) ?? ""), res: \(error.errorDescription ?? "error") ")
-//          callback(DefaultResponse(statusCode: "error", statusMsg: error.localizedDescription) as! CArtResponse)
-      }
-      
-    }
-    
-  }
 }

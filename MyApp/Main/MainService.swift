@@ -20,14 +20,4 @@ class MainService: MCServiceProtocol {
     }
   }
   
-//  func requestMainList(userId: String, name: String, onComplete: @escaping ((MainModelReponse) -> Void)) {
-//    repository.requestMainList(userId: userId, name: name) { response, error in
-//      guard let mainResp = response else {
-//        return
-//      }
-//
-//      return onComplete(MainModelReponse(statusCode: "200", statusMsg: ""))
-//    }
-//  }
-  
 }
