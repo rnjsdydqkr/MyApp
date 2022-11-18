@@ -24,9 +24,9 @@ enum BuildTargetType {
   var url: String {
     switch self {
     case .dev:
-      return "http://swiftapi.rubypaper-dev.co.kr:2029"
+      return "http://swiftapi.rubypaper.co.kr:2029"
     case .test:
-      return "http://swiftapi.rubypaper-test.co.kr:2029"
+      return "http://swiftapi.rubypaper.co.kr:2029"
     case .prod:
       return "https://api.themoviedb.org"
     }

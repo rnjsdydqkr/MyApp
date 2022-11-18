@@ -137,7 +137,7 @@ public class APIProvider {
 
             callback(DecodableData, nil)
 
-          case .failure(let error):
+          case .failure(let error): // Response or APIError Decodable 실패하는 경우 포함
             debugPrint("respErrorDecodableAPIModule============")
             debugPrint("url: \(response.request?.url?.absoluteString ?? ""), error: \(error.errorDescription ?? "") ")
             debugPrint("==============================")
@@ -158,12 +158,11 @@ public class APIProvider {
 
 extension APIProvider {
   public func requestMainList(userId: String, name: String, callback: @escaping(MainListResponse?, APIError?) -> Void) {
-    requestDecodableAPIModule(api: MainAPI.mainList(userId: userId, name: name), callback: callback)
+    requestDataAPIModule(api: MainAPI.mainList(userId: userId, name: name), callback: callback)
   }
   
   public func requestPopularMovieInfo(callback: @escaping(PopularMovieInfoResponse?, APIError?) -> Void) {
-//    requestDataAPIModule(api: MainAPI.popularMovieInfo, callback: callback)
-    requestDecodableAPIModule(api: MainAPI.popularMovieInfo, callback: callback)
+    requestDataAPIModule(api: MainAPI.popularMovieInfo, callback: callback)
   }
   
 }
