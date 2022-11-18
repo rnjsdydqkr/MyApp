@@ -14,7 +14,7 @@ class RootViewModel: NSObject, MCViewModelProtocol {
   }
   
   @objcMembers
-  class Output: NSObject, MCViewModelOutputCompatible {
+  class Output: NSObject, SLViewModelOutputCompatible {
     dynamic var errorMessage: String = ""
     dynamic var needLoading: Bool = false
   }

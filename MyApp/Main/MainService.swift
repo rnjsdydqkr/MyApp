@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MainService: MCServiceProtocol {
+class MainService: SLServiceProtocol {
   private let repository = MainRepository()
   
   func requestMainList(userId: String, name: String, onCompleted: @escaping ((MainListResponse?, APIError?) -> Void)) {

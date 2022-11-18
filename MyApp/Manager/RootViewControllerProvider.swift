@@ -12,7 +12,7 @@ class RootViewControllerProvider {
   
   func changeRootViewController (_ viewController: ViewControllerType) {
     
-    var changeVC: MCViewController?
+    var changeVC: SLViewController?
     let mainStoryBoard = UIStoryboard.init(name: StoryboardNameType.main.name, bundle: nil)
 
     switch viewController {

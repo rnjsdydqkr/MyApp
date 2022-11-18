@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: MCViewController {
+class LoginViewController: SLViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()

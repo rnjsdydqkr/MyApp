@@ -21,7 +21,7 @@
 		94322265281B937300D63DB2 /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322264281B937300D63DB2 /* MyAppTests.swift */; };
 		9432226F281B937300D63DB2 /* MyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432226E281B937300D63DB2 /* MyAppUITests.swift */; };
 		94322271281B937300D63DB2 /* MyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322270281B937300D63DB2 /* MyAppUITestsLaunchTests.swift */; };
-		94322280281B943F00D63DB2 /* MCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432227F281B943F00D63DB2 /* MCViewController.swift */; };
+		94322280281B943F00D63DB2 /* SLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432227F281B943F00D63DB2 /* SLViewController.swift */; };
 		94322282281BA4FF00D63DB2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322281281BA4FF00D63DB2 /* MainViewModel.swift */; };
 		94322284281BA6A900D63DB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322283281BA6A900D63DB2 /* MainViewController.swift */; };
 		94322288281BA96B00D63DB2 /* RootViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322287281BA96B00D63DB2 /* RootViewControllerProvider.swift */; };
@@ -48,7 +48,7 @@
 		94D9770B29246CF40040B506 /* RootViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322287281BA96B00D63DB2 /* RootViewControllerProvider.swift */; };
 		94D9770C29246CF40040B506 /* APIProvider+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CA281D573500D63DB2 /* APIProvider+Error.swift */; };
 		94D9770D29246CF40040B506 /* MyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94322253281B937000D63DB2 /* MyApp.xcdatamodeld */; };
-		94D9770E29246CF40040B506 /* MCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432227F281B943F00D63DB2 /* MCViewController.swift */; };
+		94D9770E29246CF40040B506 /* SLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432227F281B943F00D63DB2 /* SLViewController.swift */; };
 		94D9770F29246CF40040B506 /* APIProvider+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C8281D417000D63DB2 /* APIProvider+Response.swift */; };
 		94D9771029246CF40040B506 /* CommUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C0281C431400D63DB2 /* CommUtil.swift */; };
 		94D9771129246CF40040B506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432224A281B937000D63DB2 /* AppDelegate.swift */; };
@@ -56,7 +56,7 @@
 		94D9771329246CF40040B506 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322281281BA4FF00D63DB2 /* MainViewModel.swift */; };
 		94D9771429246CF40040B506 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432228F281BC57D00D63DB2 /* MainService.swift */; };
 		94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432224C281B937000D63DB2 /* SceneDelegate.swift */; };
-		94D9771729246CF40040B506 /* Storyboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */; };
+		94D9771729246CF40040B506 /* Storyboard+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */; };
 		94D9771829246CF40040B506 /* APIProvider+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */; };
 		94D9771929246CF40040B506 /* MVVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432228D281BC2D700D63DB2 /* MVVMProtocol.swift */; };
 		94D9771D29246CF40040B506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94322258281B937300D63DB2 /* LaunchScreen.storyboard */; };
@@ -74,7 +74,7 @@
 		94D9775929246FDD0040B506 /* RootViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322287281BA96B00D63DB2 /* RootViewControllerProvider.swift */; };
 		94D9775A29246FDD0040B506 /* APIProvider+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CA281D573500D63DB2 /* APIProvider+Error.swift */; };
 		94D9775B29246FDD0040B506 /* MyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94322253281B937000D63DB2 /* MyApp.xcdatamodeld */; };
-		94D9775C29246FDD0040B506 /* MCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432227F281B943F00D63DB2 /* MCViewController.swift */; };
+		94D9775C29246FDD0040B506 /* SLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432227F281B943F00D63DB2 /* SLViewController.swift */; };
 		94D9775D29246FDD0040B506 /* APIProvider+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C8281D417000D63DB2 /* APIProvider+Response.swift */; };
 		94D9775E29246FDD0040B506 /* CommUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C0281C431400D63DB2 /* CommUtil.swift */; };
 		94D9775F29246FDD0040B506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432224A281B937000D63DB2 /* AppDelegate.swift */; };
@@ -82,7 +82,7 @@
 		94D9776129246FDD0040B506 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322281281BA4FF00D63DB2 /* MainViewModel.swift */; };
 		94D9776229246FDD0040B506 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432228F281BC57D00D63DB2 /* MainService.swift */; };
 		94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432224C281B937000D63DB2 /* SceneDelegate.swift */; };
-		94D9776529246FDD0040B506 /* Storyboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */; };
+		94D9776529246FDD0040B506 /* Storyboard+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */; };
 		94D9776629246FDD0040B506 /* APIProvider+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */; };
 		94D9776729246FDD0040B506 /* MVVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9432228D281BC2D700D63DB2 /* MVVMProtocol.swift */; };
 		94D9776B29246FDD0040B506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94322258281B937300D63DB2 /* LaunchScreen.storyboard */; };
@@ -90,14 +90,23 @@
 		94D9776D29246FDD0040B506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94322256281B937300D63DB2 /* Assets.xcassets */; };
 		94D9776E29246FDD0040B506 /* i18n.sh in Resources */ = {isa = PBXBuildFile; fileRef = 943222BB281C41CD00D63DB2 /* i18n.sh */; };
 		94D9776F29246FDD0040B506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94322250281B937000D63DB2 /* Main.storyboard */; };
-		94D977782924C8DC0040B506 /* Repository+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Additions.swift */; };
-		94D977792924C8DC0040B506 /* Repository+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Additions.swift */; };
-		94D9777A2924C8DC0040B506 /* Repository+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Additions.swift */; };
+		94D977782924C8DC0040B506 /* Repository+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Enum.swift */; };
+		94D977792924C8DC0040B506 /* Repository+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Enum.swift */; };
+		94D9777A2924C8DC0040B506 /* Repository+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Enum.swift */; };
 		94D9777C2924CEFF0040B506 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */; };
 		94D9777D2924CEFF0040B506 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */; };
 		94D9777E2924CEFF0040B506 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */; };
 		94EF08A4291E14D0000F0B8B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A3291E14D0000F0B8B /* RootViewModel.swift */; };
-		94EF08A8291E4452000F0B8B /* Storyboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */; };
+		94EF08A8291E4452000F0B8B /* Storyboard+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */; };
+		94F3BFBE29274D3A00781521 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */; };
+		94F3BFBF29274D3A00781521 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */; };
+		94F3BFC029274D3A00781521 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */; };
+		94F3BFC229274D7100781521 /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC129274D7100781521 /* UIFont+Additions.swift */; };
+		94F3BFC329274D7100781521 /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC129274D7100781521 /* UIFont+Additions.swift */; };
+		94F3BFC429274D7100781521 /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC129274D7100781521 /* UIFont+Additions.swift */; };
+		94F3BFC629274E2200781521 /* SLStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC529274E2200781521 /* SLStyle.swift */; };
+		94F3BFC729274E2200781521 /* SLStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC529274E2200781521 /* SLStyle.swift */; };
+		94F3BFC829274E2200781521 /* SLStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC529274E2200781521 /* SLStyle.swift */; };
 		B9EBA956CA009FF4E16CF752 /* libPods-MyApp DEV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F582B29CAEA0B55B62266A /* libPods-MyApp DEV.a */; };
 /* End PBXBuildFile section */
 
@@ -143,7 +152,7 @@
 		9432226A281B937300D63DB2 /* MyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9432226E281B937300D63DB2 /* MyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppUITests.swift; sourceTree = "<group>"; };
 		94322270281B937300D63DB2 /* MyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9432227F281B943F00D63DB2 /* MCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCViewController.swift; sourceTree = "<group>"; };
+		9432227F281B943F00D63DB2 /* SLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLViewController.swift; sourceTree = "<group>"; };
 		94322281281BA4FF00D63DB2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		94322283281BA6A900D63DB2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		94322287281BA96B00D63DB2 /* RootViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerProvider.swift; sourceTree = "<group>"; };
@@ -165,10 +174,13 @@
 		94D9772729246CF50040B506 /* MyApp DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp DEV-Info.plist"; sourceTree = "<group>"; };
 		94D9777429246FDD0040B506 /* MyApp TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp TEST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9777529246FDE0040B506 /* MyApp TEST-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp TEST-Info.plist"; sourceTree = "<group>"; };
-		94D977772924C8DC0040B506 /* Repository+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Additions.swift"; sourceTree = "<group>"; };
+		94D977772924C8DC0040B506 /* Repository+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Enum.swift"; sourceTree = "<group>"; };
 		94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Extensions.swift"; sourceTree = "<group>"; };
 		94EF08A3291E14D0000F0B8B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Additions.swift"; sourceTree = "<group>"; };
+		94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Enum.swift"; sourceTree = "<group>"; };
+		94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		94F3BFC129274D7100781521 /* UIFont+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
+		94F3BFC529274E2200781521 /* SLStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLStyle.swift; sourceTree = "<group>"; };
 		95BF492C4FE6D8B7A35C4A22 /* Pods-MyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyAppTests/Pods-MyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A04D8BFE79775B3B793D5718 /* Pods-MyApp DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp DEV.debug.xcconfig"; path = "Target Support Files/Pods-MyApp DEV/Pods-MyApp DEV.debug.xcconfig"; sourceTree = "<group>"; };
 		A72C88C76B639CE5E779AFF3 /* Pods-MyApp-MyApp TEST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyApp TEST.release.xcconfig"; path = "Target Support Files/Pods-MyApp-MyApp TEST/Pods-MyApp-MyApp TEST.release.xcconfig"; sourceTree = "<group>"; };
@@ -290,7 +302,7 @@
 				9432224C281B937000D63DB2 /* SceneDelegate.swift */,
 				94EF08A2291E148C000F0B8B /* Root */,
 				94322293281BCDCB00D63DB2 /* resource */,
-				943222C4281D405C00D63DB2 /* MCRepository */,
+				943222C4281D405C00D63DB2 /* Repository */,
 				94322250281B937000D63DB2 /* Main.storyboard */,
 				94322256281B937300D63DB2 /* Assets.xcassets */,
 				94322258281B937300D63DB2 /* LaunchScreen.storyboard */,
@@ -329,7 +341,7 @@
 		9432227E281B942000D63DB2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				9432227F281B943F00D63DB2 /* MCViewController.swift */,
+				9432227F281B943F00D63DB2 /* SLViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -388,12 +400,12 @@
 			path = common;
 			sourceTree = "<group>";
 		};
-		943222C4281D405C00D63DB2 /* MCRepository */ = {
+		943222C4281D405C00D63DB2 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				943222C5281D407B00D63DB2 /* ServerAPI */,
 			);
-			path = MCRepository;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		943222C5281D407B00D63DB2 /* ServerAPI */ = {
@@ -446,8 +458,11 @@
 		94EF08A6291E437F000F0B8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				94D977772924C8DC0040B506 /* Repository+Additions.swift */,
-				94EF08A7291E4452000F0B8B /* Storyboard+Additions.swift */,
+				94D977772924C8DC0040B506 /* Repository+Enum.swift */,
+				94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */,
+				94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */,
+				94F3BFC129274D7100781521 /* UIFont+Additions.swift */,
+				94F3BFC529274E2200781521 /* SLStyle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -814,6 +829,7 @@
 			files = (
 				94322292281BC59700D63DB2 /* MainRepository.swift in Sources */,
 				94D9777C2924CEFF0040B506 /* Repository+Extensions.swift in Sources */,
+				94F3BFC629274E2200781521 /* SLStyle.swift in Sources */,
 				94EF08A4291E14D0000F0B8B /* RootViewModel.swift in Sources */,
 				943222C7281D409800D63DB2 /* APIProvider.swift in Sources */,
 				9432228B281BB42100D63DB2 /* LoginViewController.swift in Sources */,
@@ -823,16 +839,18 @@
 				94322288281BA96B00D63DB2 /* RootViewControllerProvider.swift in Sources */,
 				943222CB281D573500D63DB2 /* APIProvider+Error.swift in Sources */,
 				94322255281B937000D63DB2 /* MyApp.xcdatamodeld in Sources */,
-				94322280281B943F00D63DB2 /* MCViewController.swift in Sources */,
-				94D977782924C8DC0040B506 /* Repository+Additions.swift in Sources */,
+				94322280281B943F00D63DB2 /* SLViewController.swift in Sources */,
+				94D977782924C8DC0040B506 /* Repository+Enum.swift in Sources */,
 				943222C9281D417000D63DB2 /* APIProvider+Response.swift in Sources */,
 				943222C1281C431400D63DB2 /* CommUtil.swift in Sources */,
 				9432224B281B937000D63DB2 /* AppDelegate.swift in Sources */,
+				94F3BFC229274D7100781521 /* UIFont+Additions.swift in Sources */,
 				943222BE281C42CB00D63DB2 /* I18N.swift in Sources */,
+				94F3BFBE29274D3A00781521 /* UIColor+Additions.swift in Sources */,
 				94322282281BA4FF00D63DB2 /* MainViewModel.swift in Sources */,
 				94322290281BC57D00D63DB2 /* MainService.swift in Sources */,
 				9432224D281B937000D63DB2 /* SceneDelegate.swift in Sources */,
-				94EF08A8291E4452000F0B8B /* Storyboard+Additions.swift in Sources */,
+				94EF08A8291E4452000F0B8B /* Storyboard+Enum.swift in Sources */,
 				943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */,
 				9432228E281BC2D700D63DB2 /* MVVMProtocol.swift in Sources */,
 			);
@@ -861,6 +879,7 @@
 			files = (
 				94D9770429246CF40040B506 /* MainRepository.swift in Sources */,
 				94D9777D2924CEFF0040B506 /* Repository+Extensions.swift in Sources */,
+				94F3BFC729274E2200781521 /* SLStyle.swift in Sources */,
 				94D9770529246CF40040B506 /* RootViewModel.swift in Sources */,
 				94D9770629246CF40040B506 /* APIProvider.swift in Sources */,
 				94D9770729246CF40040B506 /* LoginViewController.swift in Sources */,
@@ -870,16 +889,18 @@
 				94D9770B29246CF40040B506 /* RootViewControllerProvider.swift in Sources */,
 				94D9770C29246CF40040B506 /* APIProvider+Error.swift in Sources */,
 				94D9770D29246CF40040B506 /* MyApp.xcdatamodeld in Sources */,
-				94D9770E29246CF40040B506 /* MCViewController.swift in Sources */,
-				94D977792924C8DC0040B506 /* Repository+Additions.swift in Sources */,
+				94D9770E29246CF40040B506 /* SLViewController.swift in Sources */,
+				94D977792924C8DC0040B506 /* Repository+Enum.swift in Sources */,
 				94D9770F29246CF40040B506 /* APIProvider+Response.swift in Sources */,
 				94D9771029246CF40040B506 /* CommUtil.swift in Sources */,
 				94D9771129246CF40040B506 /* AppDelegate.swift in Sources */,
+				94F3BFC329274D7100781521 /* UIFont+Additions.swift in Sources */,
 				94D9771229246CF40040B506 /* I18N.swift in Sources */,
+				94F3BFBF29274D3A00781521 /* UIColor+Additions.swift in Sources */,
 				94D9771329246CF40040B506 /* MainViewModel.swift in Sources */,
 				94D9771429246CF40040B506 /* MainService.swift in Sources */,
 				94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */,
-				94D9771729246CF40040B506 /* Storyboard+Additions.swift in Sources */,
+				94D9771729246CF40040B506 /* Storyboard+Enum.swift in Sources */,
 				94D9771829246CF40040B506 /* APIProvider+Parameters.swift in Sources */,
 				94D9771929246CF40040B506 /* MVVMProtocol.swift in Sources */,
 			);
@@ -891,6 +912,7 @@
 			files = (
 				94D9775229246FDD0040B506 /* MainRepository.swift in Sources */,
 				94D9777E2924CEFF0040B506 /* Repository+Extensions.swift in Sources */,
+				94F3BFC829274E2200781521 /* SLStyle.swift in Sources */,
 				94D9775329246FDD0040B506 /* RootViewModel.swift in Sources */,
 				94D9775429246FDD0040B506 /* APIProvider.swift in Sources */,
 				94D9775529246FDD0040B506 /* LoginViewController.swift in Sources */,
@@ -900,16 +922,18 @@
 				94D9775929246FDD0040B506 /* RootViewControllerProvider.swift in Sources */,
 				94D9775A29246FDD0040B506 /* APIProvider+Error.swift in Sources */,
 				94D9775B29246FDD0040B506 /* MyApp.xcdatamodeld in Sources */,
-				94D9775C29246FDD0040B506 /* MCViewController.swift in Sources */,
-				94D9777A2924C8DC0040B506 /* Repository+Additions.swift in Sources */,
+				94D9775C29246FDD0040B506 /* SLViewController.swift in Sources */,
+				94D9777A2924C8DC0040B506 /* Repository+Enum.swift in Sources */,
 				94D9775D29246FDD0040B506 /* APIProvider+Response.swift in Sources */,
 				94D9775E29246FDD0040B506 /* CommUtil.swift in Sources */,
 				94D9775F29246FDD0040B506 /* AppDelegate.swift in Sources */,
+				94F3BFC429274D7100781521 /* UIFont+Additions.swift in Sources */,
 				94D9776029246FDD0040B506 /* I18N.swift in Sources */,
+				94F3BFC029274D3A00781521 /* UIColor+Additions.swift in Sources */,
 				94D9776129246FDD0040B506 /* MainViewModel.swift in Sources */,
 				94D9776229246FDD0040B506 /* MainService.swift in Sources */,
 				94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */,
-				94D9776529246FDD0040B506 /* Storyboard+Additions.swift in Sources */,
+				94D9776529246FDD0040B506 /* Storyboard+Enum.swift in Sources */,
 				94D9776629246FDD0040B506 /* APIProvider+Parameters.swift in Sources */,
 				94D9776729246FDD0040B506 /* MVVMProtocol.swift in Sources */,
 			);

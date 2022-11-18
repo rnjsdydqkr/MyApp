@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: MCViewController {
+class MainViewController: SLViewController {
   
   @IBOutlet private var startLabel: UILabel!
   @IBOutlet private var firstButton: UIButton!

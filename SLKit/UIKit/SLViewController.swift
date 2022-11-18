@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MCViewController: UIViewController {
+class SLViewController: UIViewController {
 
   fileprivate var keyValueObserverList: [NSKeyValueObservation] = []
 

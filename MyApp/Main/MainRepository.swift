@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MainRepository: MCRepositoryProtocol {
+class MainRepository: SLRepositoryProtocol {
   func requestMainList(userId: String, name: String, callback: @escaping (MainListResponse?, APIError?) -> Void) {
     APIProvider.shared.requestMainList(userId: userId, name: name, callback: callback)
   }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RootViewController: MCViewController {
+class RootViewController: SLViewController {
   
   let viewModel = RootViewModel()
   

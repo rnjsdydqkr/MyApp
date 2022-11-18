@@ -8,9 +8,9 @@
 import Foundation
 
 protocol MCViewModelProtocol {
-  associatedtype Service: MCServiceProtocol
+  associatedtype Service: SLServiceProtocol
   associatedtype Input
-  associatedtype Output: MCViewModelOutputCompatible
+  associatedtype Output: SLViewModelOutputCompatible
   
   var service: Service { get }
   var input: Input { get }
@@ -18,15 +18,15 @@ protocol MCViewModelProtocol {
   
 }
 
-protocol MCServiceProtocol {
+protocol SLServiceProtocol {
   
 }
 
-protocol MCRepositoryProtocol {
+protocol SLRepositoryProtocol {
   
 }
 
-protocol MCViewModelOutputCompatible {
+protocol SLViewModelOutputCompatible {
   var errorMessage: String { get set }
   var needLoading: Bool { get set }
 }
