@@ -107,6 +107,15 @@
 		94F3BFC629274E2200781521 /* SLStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC529274E2200781521 /* SLStyle.swift */; };
 		94F3BFC729274E2200781521 /* SLStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC529274E2200781521 /* SLStyle.swift */; };
 		94F3BFC829274E2200781521 /* SLStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFC529274E2200781521 /* SLStyle.swift */; };
+		94F3BFCB29277FF200781521 /* UIFont+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFCA29277FF200781521 /* UIFont+Enum.swift */; };
+		94F3BFCC29277FF200781521 /* UIFont+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFCA29277FF200781521 /* UIFont+Enum.swift */; };
+		94F3BFCD29277FF200781521 /* UIFont+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFCA29277FF200781521 /* UIFont+Enum.swift */; };
+		94F3BFD1292783AA00781521 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFCF292783AA00781521 /* JetBrainsMono-Regular.ttf */; };
+		94F3BFD2292783AA00781521 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFCF292783AA00781521 /* JetBrainsMono-Regular.ttf */; };
+		94F3BFD3292783AA00781521 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFCF292783AA00781521 /* JetBrainsMono-Regular.ttf */; };
+		94F3BFD4292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */; };
+		94F3BFD5292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */; };
+		94F3BFD6292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */; };
 		B9EBA956CA009FF4E16CF752 /* libPods-MyApp DEV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F582B29CAEA0B55B62266A /* libPods-MyApp DEV.a */; };
 /* End PBXBuildFile section */
 
@@ -181,6 +190,9 @@
 		94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		94F3BFC129274D7100781521 /* UIFont+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
 		94F3BFC529274E2200781521 /* SLStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLStyle.swift; sourceTree = "<group>"; };
+		94F3BFCA29277FF200781521 /* UIFont+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Enum.swift"; sourceTree = "<group>"; };
+		94F3BFCF292783AA00781521 /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
+		94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Medium.ttf"; sourceTree = "<group>"; };
 		95BF492C4FE6D8B7A35C4A22 /* Pods-MyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyAppTests/Pods-MyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A04D8BFE79775B3B793D5718 /* Pods-MyApp DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp DEV.debug.xcconfig"; path = "Target Support Files/Pods-MyApp DEV/Pods-MyApp DEV.debug.xcconfig"; sourceTree = "<group>"; };
 		A72C88C76B639CE5E779AFF3 /* Pods-MyApp-MyApp TEST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyApp TEST.release.xcconfig"; path = "Target Support Files/Pods-MyApp-MyApp TEST/Pods-MyApp-MyApp TEST.release.xcconfig"; sourceTree = "<group>"; };
@@ -333,7 +345,9 @@
 			children = (
 				9432227E281B942000D63DB2 /* UIKit */,
 				94EF08A5291E4369000F0B8B /* Extensions */,
+				94F3BFC929274F1900781521 /* Enum */,
 				94EF08A6291E437F000F0B8B /* Components */,
+				94F3BFCE2927839500781521 /* Font */,
 			);
 			path = SLKit;
 			sourceTree = "<group>";
@@ -458,13 +472,30 @@
 		94EF08A6291E437F000F0B8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				94D977772924C8DC0040B506 /* Repository+Enum.swift */,
-				94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */,
 				94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */,
 				94F3BFC129274D7100781521 /* UIFont+Additions.swift */,
 				94F3BFC529274E2200781521 /* SLStyle.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		94F3BFC929274F1900781521 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				94D977772924C8DC0040B506 /* Repository+Enum.swift */,
+				94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */,
+				94F3BFCA29277FF200781521 /* UIFont+Enum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		94F3BFCE2927839500781521 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */,
+				94F3BFCF292783AA00781521 /* JetBrainsMono-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		FB4FC3EB5599CDF567FB65B6 /* Frameworks */ = {
@@ -628,10 +659,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9432225A281B937300D63DB2 /* LaunchScreen.storyboard in Resources */,
+				94F3BFD4292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */,
 				943222B5281C40B700D63DB2 /* Localizable.strings in Resources */,
 				94322257281B937300D63DB2 /* Assets.xcassets in Resources */,
 				943222BC281C41CD00D63DB2 /* i18n.sh in Resources */,
 				94322252281B937000D63DB2 /* Main.storyboard in Resources */,
+				94F3BFD1292783AA00781521 /* JetBrainsMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,10 +687,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D9771D29246CF40040B506 /* LaunchScreen.storyboard in Resources */,
+				94F3BFD5292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */,
 				94D9771E29246CF40040B506 /* Localizable.strings in Resources */,
 				94D9771F29246CF40040B506 /* Assets.xcassets in Resources */,
 				94D9772029246CF40040B506 /* i18n.sh in Resources */,
 				94D9772129246CF40040B506 /* Main.storyboard in Resources */,
+				94F3BFD2292783AA00781521 /* JetBrainsMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,10 +701,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D9776B29246FDD0040B506 /* LaunchScreen.storyboard in Resources */,
+				94F3BFD6292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */,
 				94D9776C29246FDD0040B506 /* Localizable.strings in Resources */,
 				94D9776D29246FDD0040B506 /* Assets.xcassets in Resources */,
 				94D9776E29246FDD0040B506 /* i18n.sh in Resources */,
 				94D9776F29246FDD0040B506 /* Main.storyboard in Resources */,
+				94F3BFD3292783AA00781521 /* JetBrainsMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +887,7 @@
 				94322282281BA4FF00D63DB2 /* MainViewModel.swift in Sources */,
 				94322290281BC57D00D63DB2 /* MainService.swift in Sources */,
 				9432224D281B937000D63DB2 /* SceneDelegate.swift in Sources */,
+				94F3BFCB29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94EF08A8291E4452000F0B8B /* Storyboard+Enum.swift in Sources */,
 				943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */,
 				9432228E281BC2D700D63DB2 /* MVVMProtocol.swift in Sources */,
@@ -900,6 +938,7 @@
 				94D9771329246CF40040B506 /* MainViewModel.swift in Sources */,
 				94D9771429246CF40040B506 /* MainService.swift in Sources */,
 				94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */,
+				94F3BFCC29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94D9771729246CF40040B506 /* Storyboard+Enum.swift in Sources */,
 				94D9771829246CF40040B506 /* APIProvider+Parameters.swift in Sources */,
 				94D9771929246CF40040B506 /* MVVMProtocol.swift in Sources */,
@@ -933,6 +972,7 @@
 				94D9776129246FDD0040B506 /* MainViewModel.swift in Sources */,
 				94D9776229246FDD0040B506 /* MainService.swift in Sources */,
 				94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */,
+				94F3BFCD29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94D9776529246FDD0040B506 /* Storyboard+Enum.swift in Sources */,
 				94D9776629246FDD0040B506 /* APIProvider+Parameters.swift in Sources */,
 				94D9776729246FDD0040B506 /* MVVMProtocol.swift in Sources */,

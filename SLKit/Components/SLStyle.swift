@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+public class SLStyle {
+  public enum FontSet {
+    case regular, medium, large
+  }
+  
+}

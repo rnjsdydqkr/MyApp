@@ -38,6 +38,11 @@ class MainViewController: SLViewController {
   
   override func setupViewStyle() {
     debugPrint("[MainViewController] setupViewStyle")
+    
+    // Label Style Test
+    startLabel.textColor = .turquoiseGreen
+    startLabel.font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular)
+    startLabel.font = UIFont(name: FontStyle.JetBrainsMonoRegular.name, size: 20)
   }
   
   override func viewWillAppear(_ animated: Bool) {
