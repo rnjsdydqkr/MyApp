@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: SLViewController {
   
+  @IBOutlet private var topLabel: UILabel!
   @IBOutlet private var startLabel: UILabel!
   @IBOutlet private var firstButton: UIButton!
   @IBOutlet private var secondButton: UIButton!
@@ -40,9 +41,9 @@ class MainViewController: SLViewController {
     debugPrint("[MainViewController] setupViewStyle")
     
     // Label Style Test
-    startLabel.textColor = .turquoiseGreen
-    startLabel.font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular)
-    startLabel.font = UIFont(name: FontStyle.JetBrainsMonoRegular.name, size: 20)
+//    startLabel.textColor = .turquoiseGreen
+//    startLabel.font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular)
+//    startLabel.font = UIFont(name: FontStyle.JetBrainsMonoRegular.name, size: 20)
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +58,9 @@ class MainViewController: SLViewController {
       viewModel.output.startString = "[PROD] requestPopularMovieInfo API 호출]"
       viewModel.requestPopularMovieInfo()
     case secondButton:
-      viewModel.output.startString = "secondButton"
+      viewModel.output.startString = "start Label\nstart Label\nstart Label"
+      updateParagraphStyle(text: "top Label\ntop Label\ntop Label")
+      self.topLabel.textColor = SLStyle.shared.color(type: .buttonBackgroundColor)
     case thirdButton:
       viewModel.output.startString = "[DEV, TEST] requestMainList API 호출"
       viewModel.requestMainList()
@@ -65,5 +68,24 @@ class MainViewController: SLViewController {
       debugPrint("[MainViewController] didPressed default")
     }
   }
+  
+//  private func updateParagraphStyle(text: String) {
+//    let attributedString = NSMutableAttributedString(string: text)
+//    let lineHeight = 30
+//    let letterSpacing = 2000.0
+//
+//    let paragraphStyle = NSMutableParagraphStyle()
+//    paragraphStyle.maximumLineHeight = CGFloat(lineHeight)
+//    paragraphStyle.minimumLineHeight = CGFloat(lineHeight)
+//    paragraphStyle.lineHeightMultiple = 0
+//    paragraphStyle.alignment = .right // textAlignment
+//    paragraphStyle.lineSpacing = 0
+//
+//    // letterSpacing/100.0
+//    attributedString.addAttributes([.paragraphStyle: paragraphStyle,
+//                                    .kern: letterSpacing/100.0],
+//                                   range: NSRange(location: 0, length: attributedString.length))
+//    self.topLabel.attributedText = attributedString
+//  }
 
 }
