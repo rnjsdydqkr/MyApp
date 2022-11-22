@@ -16,6 +16,9 @@ class RootViewController: SLViewController {
     viewModel.input.isPermissed = true
     // FIXME 초기 화면 진입 테스트 코드
     viewModel.input.isLogged = true
+    // TODO Font Size 설정 - UserDefault
+    let fontSize = 0
+    SLStyle.shared.fontSet = SLStyle.FontSet(size: fontSize)
   }
   
   override func setupObserver() {
