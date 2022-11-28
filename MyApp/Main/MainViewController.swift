@@ -59,8 +59,8 @@ class MainViewController: SLViewController {
       viewModel.requestPopularMovieInfo()
     case secondButton:
       viewModel.output.startString = "start Label\nstart Label\nstart Label"
-      updateParagraphStyle(text: "top Label\ntop Label\ntop Label")
-      self.topLabel.textColor = SLStyle.shared.color(type: .buttonBackgroundColor)
+//      updateParagraphStyle(text: "top Label\ntop Label\ntop Label")
+//      self.topLabel.textColor = SLStyle.shared.color(type: .buttonBackgroundColor)
     case thirdButton:
       viewModel.output.startString = "[DEV, TEST] requestMainList API 호출"
       viewModel.requestMainList()

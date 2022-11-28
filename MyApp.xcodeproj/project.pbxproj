@@ -116,6 +116,9 @@
 		94F3BFD4292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */; };
 		94F3BFD5292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */; };
 		94F3BFD6292783AA00781521 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */; };
+		94F3BFDC292CA40A00781521 /* SLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFDB292CA40A00781521 /* SLLabel.swift */; };
+		94F3BFDD292CA40A00781521 /* SLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFDB292CA40A00781521 /* SLLabel.swift */; };
+		94F3BFDE292CA40A00781521 /* SLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFDB292CA40A00781521 /* SLLabel.swift */; };
 		B9EBA956CA009FF4E16CF752 /* libPods-MyApp DEV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F582B29CAEA0B55B62266A /* libPods-MyApp DEV.a */; };
 /* End PBXBuildFile section */
 
@@ -193,6 +196,7 @@
 		94F3BFCA29277FF200781521 /* UIFont+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Enum.swift"; sourceTree = "<group>"; };
 		94F3BFCF292783AA00781521 /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
 		94F3BFD0292783AA00781521 /* JetBrainsMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Medium.ttf"; sourceTree = "<group>"; };
+		94F3BFDB292CA40A00781521 /* SLLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLLabel.swift; sourceTree = "<group>"; };
 		95BF492C4FE6D8B7A35C4A22 /* Pods-MyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MyAppTests/Pods-MyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A04D8BFE79775B3B793D5718 /* Pods-MyApp DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp DEV.debug.xcconfig"; path = "Target Support Files/Pods-MyApp DEV/Pods-MyApp DEV.debug.xcconfig"; sourceTree = "<group>"; };
 		A72C88C76B639CE5E779AFF3 /* Pods-MyApp-MyApp TEST.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyApp TEST.release.xcconfig"; path = "Target Support Files/Pods-MyApp-MyApp TEST/Pods-MyApp-MyApp TEST.release.xcconfig"; sourceTree = "<group>"; };
@@ -356,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				9432227F281B943F00D63DB2 /* SLViewController.swift */,
+				94F3BFDB292CA40A00781521 /* SLLabel.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -875,6 +880,7 @@
 				9432224F281B937000D63DB2 /* RootViewController.swift in Sources */,
 				94322288281BA96B00D63DB2 /* RootViewControllerProvider.swift in Sources */,
 				943222CB281D573500D63DB2 /* APIProvider+Error.swift in Sources */,
+				94F3BFDC292CA40A00781521 /* SLLabel.swift in Sources */,
 				94322255281B937000D63DB2 /* MyApp.xcdatamodeld in Sources */,
 				94322280281B943F00D63DB2 /* SLViewController.swift in Sources */,
 				94D977782924C8DC0040B506 /* Repository+Enum.swift in Sources */,
@@ -926,6 +932,7 @@
 				94D9770A29246CF40040B506 /* RootViewController.swift in Sources */,
 				94D9770B29246CF40040B506 /* RootViewControllerProvider.swift in Sources */,
 				94D9770C29246CF40040B506 /* APIProvider+Error.swift in Sources */,
+				94F3BFDD292CA40A00781521 /* SLLabel.swift in Sources */,
 				94D9770D29246CF40040B506 /* MyApp.xcdatamodeld in Sources */,
 				94D9770E29246CF40040B506 /* SLViewController.swift in Sources */,
 				94D977792924C8DC0040B506 /* Repository+Enum.swift in Sources */,
@@ -960,6 +967,7 @@
 				94D9775829246FDD0040B506 /* RootViewController.swift in Sources */,
 				94D9775929246FDD0040B506 /* RootViewControllerProvider.swift in Sources */,
 				94D9775A29246FDD0040B506 /* APIProvider+Error.swift in Sources */,
+				94F3BFDE292CA40A00781521 /* SLLabel.swift in Sources */,
 				94D9775B29246FDD0040B506 /* MyApp.xcdatamodeld in Sources */,
 				94D9775C29246FDD0040B506 /* SLViewController.swift in Sources */,
 				94D9777A2924C8DC0040B506 /* Repository+Enum.swift in Sources */,

@@ -7,6 +7,8 @@
 
 import UIKit
 
+public typealias SKFont = SLStyle.SKFont
+
 public class SLStyle {
   public static let shared: SLStyle = SLStyle()
   public var fontSet: FontSet = .regular
