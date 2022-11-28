@@ -38,6 +38,9 @@
 		943222CB281D573500D63DB2 /* APIProvider+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CA281D573500D63DB2 /* APIProvider+Error.swift */; };
 		943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */; };
 		943222CF281D620E00D63DB2 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CE281D620E00D63DB2 /* MainAPI.swift */; };
+		94B7595A2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
+		94B7595B2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
+		94B7595C2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
 		94D9770429246CF40040B506 /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322291281BC59700D63DB2 /* MainRepository.swift */; };
 		94D9770529246CF40040B506 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A3291E14D0000F0B8B /* RootViewModel.swift */; };
 		94D9770629246CF40040B506 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C6281D409800D63DB2 /* APIProvider.swift */; };
@@ -93,9 +96,6 @@
 		94D977782924C8DC0040B506 /* Repository+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Enum.swift */; };
 		94D977792924C8DC0040B506 /* Repository+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Enum.swift */; };
 		94D9777A2924C8DC0040B506 /* Repository+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D977772924C8DC0040B506 /* Repository+Enum.swift */; };
-		94D9777C2924CEFF0040B506 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */; };
-		94D9777D2924CEFF0040B506 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */; };
-		94D9777E2924CEFF0040B506 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */; };
 		94EF08A4291E14D0000F0B8B /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A3291E14D0000F0B8B /* RootViewModel.swift */; };
 		94EF08A8291E4452000F0B8B /* Storyboard+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */; };
 		94F3BFBE29274D3A00781521 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */; };
@@ -182,12 +182,12 @@
 		943222CA281D573500D63DB2 /* APIProvider+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Error.swift"; sourceTree = "<group>"; };
 		943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Parameters.swift"; sourceTree = "<group>"; };
 		943222CE281D620E00D63DB2 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
+		94B759592934A10B003081D1 /* Repository+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Extensions.swift"; sourceTree = "<group>"; };
 		94D9772629246CF40040B506 /* MyApp DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9772729246CF50040B506 /* MyApp DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp DEV-Info.plist"; sourceTree = "<group>"; };
 		94D9777429246FDD0040B506 /* MyApp TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp TEST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9777529246FDE0040B506 /* MyApp TEST-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp TEST-Info.plist"; sourceTree = "<group>"; };
 		94D977772924C8DC0040B506 /* Repository+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Enum.swift"; sourceTree = "<group>"; };
-		94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Extensions.swift"; sourceTree = "<group>"; };
 		94EF08A3291E14D0000F0B8B /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		94EF08A7291E4452000F0B8B /* Storyboard+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Enum.swift"; sourceTree = "<group>"; };
 		94F3BFBD29274D3A00781521 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
@@ -469,7 +469,7 @@
 		94EF08A5291E4369000F0B8B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				94D9777B2924CEFF0040B506 /* Repository+Extensions.swift */,
+				94B759592934A10B003081D1 /* Repository+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -870,7 +870,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94322292281BC59700D63DB2 /* MainRepository.swift in Sources */,
-				94D9777C2924CEFF0040B506 /* Repository+Extensions.swift in Sources */,
 				94F3BFC629274E2200781521 /* SLStyle.swift in Sources */,
 				94EF08A4291E14D0000F0B8B /* RootViewModel.swift in Sources */,
 				943222C7281D409800D63DB2 /* APIProvider.swift in Sources */,
@@ -885,6 +884,7 @@
 				94322280281B943F00D63DB2 /* SLViewController.swift in Sources */,
 				94D977782924C8DC0040B506 /* Repository+Enum.swift in Sources */,
 				943222C9281D417000D63DB2 /* APIProvider+Response.swift in Sources */,
+				94B7595A2934A10B003081D1 /* Repository+Extensions.swift in Sources */,
 				943222C1281C431400D63DB2 /* CommUtil.swift in Sources */,
 				9432224B281B937000D63DB2 /* AppDelegate.swift in Sources */,
 				94F3BFC229274D7100781521 /* UIFont+Additions.swift in Sources */,
@@ -922,7 +922,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D9770429246CF40040B506 /* MainRepository.swift in Sources */,
-				94D9777D2924CEFF0040B506 /* Repository+Extensions.swift in Sources */,
 				94F3BFC729274E2200781521 /* SLStyle.swift in Sources */,
 				94D9770529246CF40040B506 /* RootViewModel.swift in Sources */,
 				94D9770629246CF40040B506 /* APIProvider.swift in Sources */,
@@ -937,6 +936,7 @@
 				94D9770E29246CF40040B506 /* SLViewController.swift in Sources */,
 				94D977792924C8DC0040B506 /* Repository+Enum.swift in Sources */,
 				94D9770F29246CF40040B506 /* APIProvider+Response.swift in Sources */,
+				94B7595B2934A10B003081D1 /* Repository+Extensions.swift in Sources */,
 				94D9771029246CF40040B506 /* CommUtil.swift in Sources */,
 				94D9771129246CF40040B506 /* AppDelegate.swift in Sources */,
 				94F3BFC329274D7100781521 /* UIFont+Additions.swift in Sources */,
@@ -957,7 +957,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D9775229246FDD0040B506 /* MainRepository.swift in Sources */,
-				94D9777E2924CEFF0040B506 /* Repository+Extensions.swift in Sources */,
 				94F3BFC829274E2200781521 /* SLStyle.swift in Sources */,
 				94D9775329246FDD0040B506 /* RootViewModel.swift in Sources */,
 				94D9775429246FDD0040B506 /* APIProvider.swift in Sources */,
@@ -972,6 +971,7 @@
 				94D9775C29246FDD0040B506 /* SLViewController.swift in Sources */,
 				94D9777A2924C8DC0040B506 /* Repository+Enum.swift in Sources */,
 				94D9775D29246FDD0040B506 /* APIProvider+Response.swift in Sources */,
+				94B7595C2934A10B003081D1 /* Repository+Extensions.swift in Sources */,
 				94D9775E29246FDD0040B506 /* CommUtil.swift in Sources */,
 				94D9775F29246FDD0040B506 /* AppDelegate.swift in Sources */,
 				94F3BFC429274D7100781521 /* UIFont+Additions.swift in Sources */,
