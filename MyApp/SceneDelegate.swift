@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     guard let _ = (scene as? UIWindowScene) else { return }
     
+    debugPrint("[AppLifecycle] SceneDelegate : willConnectTo")
+    
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {
@@ -24,21 +26,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This occurs shortly after the scene enters the background, or when its session is discarded.
     // Release any resources associated with this scene that can be re-created the next time the scene connects.
     // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+    debugPrint("[AppLifecycle] SceneDelegate : sceneDidDisconnect")
   }
 
   func sceneDidBecomeActive(_ scene: UIScene) {
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    // 앱 포그라운드 진입
+    debugPrint("[AppLifecycle] SceneDelegate : sceneDidBecomeActive")
   }
 
   func sceneWillResignActive(_ scene: UIScene) {
     // Called when the scene will move from an active state to an inactive state.
     // This may occur due to temporary interruptions (ex. an incoming phone call).
+    // 메뉴 선택 화면 or 홈 버튼 누를 시
+    debugPrint("[AppLifecycle] SceneDelegate : sceneWillResignActive")
   }
 
   func sceneWillEnterForeground(_ scene: UIScene) {
     // Called as the scene transitions from the background to the foreground.
     // Use this method to undo the changes made on entering the background.
+    // 앱 백그라운드 상태에서 다시 포그라운드 상태 진입
+    debugPrint("[AppLifecycle] SceneDelegate : sceneWillEnterForeground")
   }
 
   func sceneDidEnterBackground(_ scene: UIScene) {
@@ -47,6 +56,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // to restore the scene back to its current state.
 
     // Save changes in the application's managed object context when the application transitions to the background.
+    // 앱 백그라운드 진입
+    debugPrint("[AppLifecycle] SceneDelegate : sceneDidEnterBackground")
     (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
   }
   
