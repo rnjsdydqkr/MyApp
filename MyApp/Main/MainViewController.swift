@@ -44,12 +44,14 @@ class MainViewController: SLViewController {
 //    topLabel.text = I18N.common_confirm_button
 //    topLabel.change(targetString: "확", font: SLStyle.shared.title())
 //    topLabel.change(targetString: "인", color: .clearBlue)
-    topLabel.font = topLabel.customFontStyle(style: FontStyle.JetBrainsMonoMedium.name)
+//    topLabel.font = topLabel.customFontStyle(style: FontStyle.JetBrainsMonoMedium.name)
     
-    // Label Style Test
-//    startLabel.textColor = .turquoiseGreen
-//    startLabel.font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.regular)
-//    startLabel.font = UIFont(name: FontStyle.JetBrainsMonoRegular.name, size: 20)
+    // Button Test
+    firstButton.setTitle("firstButton111", for: .normal)
+    secondButton.setTitle("secondButton222", for: .normal)
+    thirdButton.setTitle("thirdButton333", for: .normal)
+    
+    secondButton.imageView?.image = UIImage(named: "splash")
     
   }
   

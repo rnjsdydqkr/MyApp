@@ -41,6 +41,9 @@
 		94B7595A2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
 		94B7595B2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
 		94B7595C2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
+		94B7595E29358B63003081D1 /* SLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B7595D29358B63003081D1 /* SLButton.swift */; };
+		94B7595F29358B63003081D1 /* SLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B7595D29358B63003081D1 /* SLButton.swift */; };
+		94B7596029358B63003081D1 /* SLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B7595D29358B63003081D1 /* SLButton.swift */; };
 		94D9770429246CF40040B506 /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94322291281BC59700D63DB2 /* MainRepository.swift */; };
 		94D9770529246CF40040B506 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF08A3291E14D0000F0B8B /* RootViewModel.swift */; };
 		94D9770629246CF40040B506 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222C6281D409800D63DB2 /* APIProvider.swift */; };
@@ -183,6 +186,7 @@
 		943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Parameters.swift"; sourceTree = "<group>"; };
 		943222CE281D620E00D63DB2 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
 		94B759592934A10B003081D1 /* Repository+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Extensions.swift"; sourceTree = "<group>"; };
+		94B7595D29358B63003081D1 /* SLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLButton.swift; sourceTree = "<group>"; };
 		94D9772629246CF40040B506 /* MyApp DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9772729246CF50040B506 /* MyApp DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp DEV-Info.plist"; sourceTree = "<group>"; };
 		94D9777429246FDD0040B506 /* MyApp TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp TEST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -361,6 +365,7 @@
 			children = (
 				9432227F281B943F00D63DB2 /* SLViewController.swift */,
 				94F3BFDB292CA40A00781521 /* SLLabel.swift */,
+				94B7595D29358B63003081D1 /* SLButton.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -890,6 +895,7 @@
 				94F3BFC229274D7100781521 /* UIFont+Additions.swift in Sources */,
 				943222BE281C42CB00D63DB2 /* I18N.swift in Sources */,
 				94F3BFBE29274D3A00781521 /* UIColor+Additions.swift in Sources */,
+				94B7595E29358B63003081D1 /* SLButton.swift in Sources */,
 				94322282281BA4FF00D63DB2 /* MainViewModel.swift in Sources */,
 				94322290281BC57D00D63DB2 /* MainService.swift in Sources */,
 				9432224D281B937000D63DB2 /* SceneDelegate.swift in Sources */,
@@ -942,6 +948,7 @@
 				94F3BFC329274D7100781521 /* UIFont+Additions.swift in Sources */,
 				94D9771229246CF40040B506 /* I18N.swift in Sources */,
 				94F3BFBF29274D3A00781521 /* UIColor+Additions.swift in Sources */,
+				94B7595F29358B63003081D1 /* SLButton.swift in Sources */,
 				94D9771329246CF40040B506 /* MainViewModel.swift in Sources */,
 				94D9771429246CF40040B506 /* MainService.swift in Sources */,
 				94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */,
@@ -977,6 +984,7 @@
 				94F3BFC429274D7100781521 /* UIFont+Additions.swift in Sources */,
 				94D9776029246FDD0040B506 /* I18N.swift in Sources */,
 				94F3BFC029274D3A00781521 /* UIColor+Additions.swift in Sources */,
+				94B7596029358B63003081D1 /* SLButton.swift in Sources */,
 				94D9776129246FDD0040B506 /* MainViewModel.swift in Sources */,
 				94D9776229246FDD0040B506 /* MainService.swift in Sources */,
 				94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */,
