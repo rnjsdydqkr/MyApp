@@ -111,6 +111,7 @@ import UIKit
 //        widthAnchor.constraint(equalToConstant: 51),
 //        heightAnchor.constraint(equalToConstant: 44)
 //      ])
+      break
     case .checkButton:
       break
     case .filterButton:
