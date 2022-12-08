@@ -50,8 +50,32 @@ class MainViewController: SLViewController {
     firstButton.title = "firstButtonOOO"
     firstButton.title = "확인"
     firstButton.style = .switchButton
-    firstButton.isSelected = true
-//    firstButton.isSelected = true
+//    firstButton.setImage(UIImage(named: "buttonswitchoff"), for: .normal)
+//    firstButton.setImage(UIImage(named: "buttonswitchon"), for: .selected)
+//    NSLayoutConstraint.activate([
+//      firstButton.widthAnchor.constraint(equalToConstant: 51),
+//      firstButton.heightAnchor.constraint(equalToConstant: 44)
+//    ])
+    
+//    firstButton.tintColor = .clear
+//    firstButton.titleLabel?.tintColor = .clear
+//    if firstButton.imageView?.image == nil {
+//      firstButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+//    }
+//    firstButton.backgroundColor = .clear
+//    firstButton.layer.borderColor = UIColor.clear.cgColor
+//    firstButton.layer.borderWidth = 0
+//    firstButton.layer.cornerRadius = 8.0
+//    firstButton.layer.masksToBounds = true
+//    firstButton.setTitleColor(.clear, for: .normal)
+//    firstButton.setTitle("", for: .normal)
+//    firstButton.setImage(UIImage(named: "buttonswitchoff"), for: .normal)
+//    firstButton.setImage(UIImage(named: "buttonswitchon"), for: .selected)
+//    NSLayoutConstraint.activate([
+//      firstButton.widthAnchor.constraint(equalToConstant: 51),
+//      firstButton.heightAnchor.constraint(equalToConstant: 44)
+//    ])
+    
     secondButton.title = "secondButtonOOO"
     secondButton.contentEdgeInsets = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
 //    secondButton.tintColor = .clear

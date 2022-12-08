@@ -71,14 +71,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="topLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcW-5F-ctX" customClass="SLLabel" customModule="MyApp" customModuleProvider="target">
+                                <rect key="frame" x="150" y="98" width="114" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="startLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeW-lf-brv" customClass="SLLabel" customModule="MyApp" customModuleProvider="target">
-                                <rect key="frame" x="169" y="193.5" width="76.5" height="20.5"/>
+                                <rect key="frame" x="150" y="168.5" width="114" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7g-H8-O4X" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
-                                <rect key="frame" x="173" y="686" width="68" height="30"/>
+                                <rect key="frame" x="100" y="666" width="214" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="firstString"/>
                                 <connections>
@@ -86,40 +92,39 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euU-Q0-AJB" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
-                                <rect key="frame" x="148" y="736" width="118" height="26"/>
+                                <rect key="frame" x="100" y="726" width="214" height="26"/>
                                 <state key="normal" title="secondString" image="square.and.arrow.up.circle" catalog="system"/>
                                 <connections>
                                     <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="F4X-7F-3tv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMh-sm-RB3" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
-                                <rect key="frame" x="170.5" y="782" width="73" height="30"/>
+                                <rect key="frame" x="100" y="782" width="214" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="thirdString"/>
                                 <connections>
                                     <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="Mn1-Rd-7Dv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="topLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcW-5F-ctX" customClass="SLLabel" customModule="MyApp" customModuleProvider="target">
-                                <rect key="frame" x="173.5" y="123" width="67" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1zI-Nb-iQd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PMh-sm-RB3" firstAttribute="top" secondItem="euU-Q0-AJB" secondAttribute="bottom" constant="20" id="BEC-Dj-o3b"/>
-                            <constraint firstItem="fcW-5F-ctX" firstAttribute="top" secondItem="1zI-Nb-iQd" secondAttribute="top" constant="75" id="C6J-bS-0K7"/>
-                            <constraint firstItem="PMh-sm-RB3" firstAttribute="centerX" secondItem="VJf-QS-Cc2" secondAttribute="centerX" id="EEb-ds-ZIc"/>
-                            <constraint firstItem="X7g-H8-O4X" firstAttribute="centerX" secondItem="VJf-QS-Cc2" secondAttribute="centerX" id="Kvy-du-jek"/>
-                            <constraint firstItem="euU-Q0-AJB" firstAttribute="top" secondItem="X7g-H8-O4X" secondAttribute="bottom" constant="20" id="Nr3-w3-hYc"/>
-                            <constraint firstItem="1zI-Nb-iQd" firstAttribute="bottom" secondItem="PMh-sm-RB3" secondAttribute="bottom" constant="50" id="S9u-VJ-lUt"/>
-                            <constraint firstItem="fcW-5F-ctX" firstAttribute="centerX" secondItem="VJf-QS-Cc2" secondAttribute="centerX" id="aCP-jb-NXa"/>
-                            <constraint firstItem="NeW-lf-brv" firstAttribute="top" secondItem="fcW-5F-ctX" secondAttribute="bottom" constant="50" id="gD2-Hf-4vT"/>
-                            <constraint firstItem="NeW-lf-brv" firstAttribute="centerX" secondItem="VJf-QS-Cc2" secondAttribute="centerX" id="rRB-Af-Fgp"/>
-                            <constraint firstItem="euU-Q0-AJB" firstAttribute="centerX" secondItem="VJf-QS-Cc2" secondAttribute="centerX" id="vpc-ft-gUK"/>
+                            <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="NeW-lf-brv" secondAttribute="trailing" constant="150" id="36X-On-ASw"/>
+                            <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="X7g-H8-O4X" secondAttribute="trailing" constant="100" id="8ma-wm-ANU"/>
+                            <constraint firstItem="PMh-sm-RB3" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="100" id="IjD-Ww-cnb"/>
+                            <constraint firstItem="NeW-lf-brv" firstAttribute="top" secondItem="fcW-5F-ctX" secondAttribute="bottom" constant="50" id="Oaw-hh-pqw"/>
+                            <constraint firstItem="1zI-Nb-iQd" firstAttribute="bottom" secondItem="PMh-sm-RB3" secondAttribute="bottom" constant="50" id="UvW-7r-kQU"/>
+                            <constraint firstItem="euU-Q0-AJB" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="100" id="VrJ-Mf-7Ba"/>
+                            <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="euU-Q0-AJB" secondAttribute="trailing" constant="100" id="X5Q-XS-3fe"/>
+                            <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="fcW-5F-ctX" secondAttribute="trailing" constant="150" id="ZTq-XE-hUj"/>
+                            <constraint firstItem="fcW-5F-ctX" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="150" id="a7v-Xe-6vo"/>
+                            <constraint firstItem="euU-Q0-AJB" firstAttribute="top" secondItem="X7g-H8-O4X" secondAttribute="bottom" constant="30" id="ekV-JQ-16G"/>
+                            <constraint firstItem="PMh-sm-RB3" firstAttribute="top" secondItem="euU-Q0-AJB" secondAttribute="bottom" constant="30" id="ets-UY-Lcs"/>
+                            <constraint firstItem="fcW-5F-ctX" firstAttribute="top" secondItem="1zI-Nb-iQd" secondAttribute="top" constant="50" id="lll-hU-KtO"/>
+                            <constraint firstItem="X7g-H8-O4X" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="100" id="mV3-kc-I8S"/>
+                            <constraint firstItem="NeW-lf-brv" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="150" id="vXt-yW-BDd"/>
+                            <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="PMh-sm-RB3" secondAttribute="trailing" constant="100" id="zNm-o6-3zK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -153,17 +158,6 @@
             <point key="canvasLocation" x="944.92753623188412" y="114.50892857142857"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="PMh-sm-RB3">
-            <size key="intrinsicContentSize" width="73" height="30"/>
-        </designable>
-        <designable name="X7g-H8-O4X">
-            <size key="intrinsicContentSize" width="68" height="30"/>
-        </designable>
-        <designable name="euU-Q0-AJB">
-            <size key="intrinsicContentSize" width="118" height="26"/>
-        </designable>
-    </designables>
     <resources>
         <image name="splash" width="1242" height="2688"/>
         <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
