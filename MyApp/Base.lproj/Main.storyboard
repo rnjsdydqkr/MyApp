@@ -77,28 +77,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMh-sm-RB3">
-                                <rect key="frame" x="154.5" y="777.5" width="105" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="thirdString"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7g-H8-O4X" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
+                                <rect key="frame" x="173" y="686" width="68" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="firstString"/>
                                 <connections>
-                                    <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="Mn1-Rd-7Dv"/>
+                                    <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="7ex-dU-QW6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euU-Q0-AJB">
-                                <rect key="frame" x="144.5" y="723" width="125" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="secondString"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euU-Q0-AJB" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
+                                <rect key="frame" x="148" y="736" width="118" height="26"/>
+                                <state key="normal" title="secondString" image="square.and.arrow.up.circle" catalog="system"/>
                                 <connections>
                                     <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="F4X-7F-3tv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7g-H8-O4X">
-                                <rect key="frame" x="157.5" y="668.5" width="99" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="firstString"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMh-sm-RB3" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
+                                <rect key="frame" x="170.5" y="782" width="73" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="thirdString"/>
                                 <connections>
-                                    <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="7ex-dU-QW6"/>
+                                    <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="Mn1-Rd-7Dv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="topLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcW-5F-ctX" customClass="SLLabel" customModule="MyApp" customModuleProvider="target">
@@ -154,8 +153,20 @@
             <point key="canvasLocation" x="944.92753623188412" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="PMh-sm-RB3">
+            <size key="intrinsicContentSize" width="73" height="30"/>
+        </designable>
+        <designable name="X7g-H8-O4X">
+            <size key="intrinsicContentSize" width="68" height="30"/>
+        </designable>
+        <designable name="euU-Q0-AJB">
+            <size key="intrinsicContentSize" width="118" height="26"/>
+        </designable>
+    </designables>
     <resources>
         <image name="splash" width="1242" height="2688"/>
+        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

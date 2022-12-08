@@ -36,7 +36,7 @@ extension SLStyle {
   // MARK: - Colors
   public enum ComponentType {
     case text, textWhite, textRed, textBlue, textOrange
-    case buttonBackgroundClearBlueColor
+    case buttonBackgroundClearBlueColor, buttonBackgroundClearBlueAlphaColor
   }
   
   public func color(type: ComponentType) -> UIColor {
@@ -54,6 +54,8 @@ extension SLStyle {
       return .pumpkinOrange
     // button
     case .buttonBackgroundClearBlueColor:
+      return .clearBlue
+    case .buttonBackgroundClearBlueAlphaColor:
       return .clearBlue.withAlphaComponent(0.5)
     }
   }
