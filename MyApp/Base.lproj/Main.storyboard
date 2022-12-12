@@ -83,17 +83,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7g-H8-O4X" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
-                                <rect key="frame" x="100" y="666" width="214" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0M-z3-yvM" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
+                                <rect key="frame" x="153" y="593.5" width="108" height="34.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="firstString"/>
+                                <state key="normal" title="zeroButton"/>
+                                <buttonConfiguration key="configuration" style="plain" title="zeroButton"/>
+                                <connections>
+                                    <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="KNU-6O-5aw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7g-H8-O4X" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
+                                <rect key="frame" x="100" y="658" width="214" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+Zmlyc3RTdHJpbmcQEBA
+</string>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <string key="title" base64-UTF8="YES">
+Zmlyc3RTdHJpbmcQEBA
+</string>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="7ex-dU-QW6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euU-Q0-AJB" customClass="SLButton" customModule="MyApp" customModuleProvider="target">
-                                <rect key="frame" x="100" y="726" width="214" height="26"/>
-                                <state key="normal" title="secondString" image="square.and.arrow.up.circle" catalog="system"/>
+                                <rect key="frame" x="100" y="722" width="214" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="secondString"/>
                                 <connections>
                                     <action selector="didPressedWithButton:" destination="27y-nC-Vee" eventType="touchUpInside" id="F4X-7F-3tv"/>
                                 </connections>
@@ -113,6 +132,7 @@
                             <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="NeW-lf-brv" secondAttribute="trailing" constant="150" id="36X-On-ASw"/>
                             <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="X7g-H8-O4X" secondAttribute="trailing" constant="100" id="8ma-wm-ANU"/>
                             <constraint firstItem="PMh-sm-RB3" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="100" id="IjD-Ww-cnb"/>
+                            <constraint firstItem="x0M-z3-yvM" firstAttribute="centerX" secondItem="VJf-QS-Cc2" secondAttribute="centerX" id="JWO-qm-ioX"/>
                             <constraint firstItem="NeW-lf-brv" firstAttribute="top" secondItem="fcW-5F-ctX" secondAttribute="bottom" constant="50" id="Oaw-hh-pqw"/>
                             <constraint firstItem="1zI-Nb-iQd" firstAttribute="bottom" secondItem="PMh-sm-RB3" secondAttribute="bottom" constant="50" id="UvW-7r-kQU"/>
                             <constraint firstItem="euU-Q0-AJB" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="100" id="VrJ-Mf-7Ba"/>
@@ -123,6 +143,7 @@
                             <constraint firstItem="PMh-sm-RB3" firstAttribute="top" secondItem="euU-Q0-AJB" secondAttribute="bottom" constant="30" id="ets-UY-Lcs"/>
                             <constraint firstItem="fcW-5F-ctX" firstAttribute="top" secondItem="1zI-Nb-iQd" secondAttribute="top" constant="50" id="lll-hU-KtO"/>
                             <constraint firstItem="X7g-H8-O4X" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="100" id="mV3-kc-I8S"/>
+                            <constraint firstItem="X7g-H8-O4X" firstAttribute="top" secondItem="x0M-z3-yvM" secondAttribute="bottom" constant="30" id="ozp-J6-WEE"/>
                             <constraint firstItem="NeW-lf-brv" firstAttribute="leading" secondItem="1zI-Nb-iQd" secondAttribute="leading" constant="150" id="vXt-yW-BDd"/>
                             <constraint firstItem="1zI-Nb-iQd" firstAttribute="trailing" secondItem="PMh-sm-RB3" secondAttribute="trailing" constant="100" id="zNm-o6-3zK"/>
                         </constraints>
@@ -133,6 +154,7 @@
                         <outlet property="startLabel" destination="NeW-lf-brv" id="ewT-tJ-qlr"/>
                         <outlet property="thirdButton" destination="PMh-sm-RB3" id="yXl-vQ-325"/>
                         <outlet property="topLabel" destination="fcW-5F-ctX" id="8bK-CG-l8b"/>
+                        <outlet property="zeroButton" destination="x0M-z3-yvM" id="5eq-CU-xzP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Af-Ne-KFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -160,7 +182,6 @@
     </scenes>
     <resources>
         <image name="splash" width="1242" height="2688"/>
-        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

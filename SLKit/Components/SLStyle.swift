@@ -35,8 +35,10 @@ public class SLStyle {
 extension SLStyle {
   // MARK: - Colors
   public enum ComponentType {
-    case text, textWhite, textRed, textBlue, textOrange
-    case buttonBackgroundClearBlueColor, buttonBackgroundClearBlueAlphaColor
+    case text, textWhite, textOrangeRed, textclearBlue, textpumpkinOrange
+    case buttonBackgroundClearBlueColor,
+         buttonBackgroundOrangeyRedColor,
+         buttonBackgroundClearBlueAlphaColor
   }
   
   public func color(type: ComponentType) -> UIColor {
@@ -46,15 +48,17 @@ extension SLStyle {
       return .black
     case .textWhite:
       return .white
-    case .textRed:
+    case .textOrangeRed:
       return .orangeyRed
-    case .textBlue:
+    case .textclearBlue:
       return .clearBlue
-    case .textOrange:
+    case .textpumpkinOrange:
       return .pumpkinOrange
     // button
     case .buttonBackgroundClearBlueColor:
       return .clearBlue
+    case .buttonBackgroundOrangeyRedColor:
+      return .orangeyRed
     case .buttonBackgroundClearBlueAlphaColor:
       return .clearBlue.withAlphaComponent(0.5)
     }

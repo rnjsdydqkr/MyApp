@@ -20,6 +20,7 @@ public class SLButton: UIButton {
     case checkButton
     case filterButton
     case clearBlueTextButton
+    case orangeyRedImageTextButton
     case noneButton
   }
   
@@ -49,11 +50,14 @@ public class SLButton: UIButton {
     }
   }
   
+  /// button 내부 insets 적용하기 위해서는 button style default 설정 필요
+  /// button image로 만들 시 button type custom iOS 15.0 이하 버전
   private func updateStyle() {
+    tintColor = .clear
+    titleLabel?.tintColor = .clear
+    
     switch style {
     case .solidButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
       let color = SLStyle.shared.color(type: .buttonBackgroundClearBlueColor)
       backgroundColor = color
@@ -61,8 +65,6 @@ public class SLButton: UIButton {
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(.white, for: .normal)
     case .largeSolidButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
       let color = SLStyle.shared.color(type: .buttonBackgroundClearBlueColor)
       backgroundColor = color
@@ -70,8 +72,6 @@ public class SLButton: UIButton {
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(.white, for: .normal)
     case .lineButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
       let color = SLStyle.shared.color(type: .buttonBackgroundClearBlueColor)
       backgroundColor = .clear
@@ -79,8 +79,6 @@ public class SLButton: UIButton {
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(color, for: .normal)
     case .largeLineButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
       let color = SLStyle.shared.color(type: .buttonBackgroundClearBlueColor)
       backgroundColor = .clear
@@ -88,8 +86,6 @@ public class SLButton: UIButton {
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(color, for: .normal)
     case .solidArrowButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
       let color = SLStyle.shared.color(type: .buttonBackgroundClearBlueColor)
       backgroundColor = color
@@ -97,8 +93,6 @@ public class SLButton: UIButton {
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(.white, for: .normal)
     case .largeSolidArrowButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
       let color = SLStyle.shared.color(type: .buttonBackgroundClearBlueColor)
       backgroundColor = color
@@ -106,8 +100,6 @@ public class SLButton: UIButton {
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(.white, for: .normal)
     case .navConfirmButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(.black, for: .normal)
@@ -117,8 +109,17 @@ public class SLButton: UIButton {
       updateBorder(width: 0, color: .clear)
       setTitleColor(.clear, for: .normal)
       setTitle("", for: .normal)
-      setImage(UIImage(named: "buttonswitchoff"), for: .normal)
-      setImage(UIImage(named: "buttonswitchon"), for: .selected)
+      if #available(iOS 15.0, *) {
+        configurationUpdateHandler = { button in
+          var config = self.configuration
+          config?.image = self.isSelected ? UIImage(named: "buttonswitchon") : UIImage(named: "buttonswitchoff")
+          self.configuration = config
+        }
+      } else {
+        /// button type custom
+        setImage(UIImage(named: "buttonswitchoff"), for: .normal)
+        setImage(UIImage(named: "buttonswitchon"), for: .selected)
+      }
       NSLayoutConstraint.activate([
         widthAnchor.constraint(equalToConstant: 51),
         heightAnchor.constraint(equalToConstant: 44)
@@ -128,16 +129,30 @@ public class SLButton: UIButton {
     case .filterButton:
       break
     case .clearBlueTextButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
       backgroundColor = .clear
       titleLabel?.font = SLStyle.shared.buttonLabel().font
       setTitleColor(.clearBlue, for: .normal)
       setTitleColor(.clearBlue, for: .selected)
+    case .orangeyRedImageTextButton:
+      contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+      let color = SLStyle.shared.color(type: .buttonBackgroundOrangeyRedColor)
+      backgroundColor = color
+      updateBorder(width: 0, color: color)
+      if #available(iOS 15.0, *) {
+        configurationUpdateHandler = { button in
+          var config = self.configuration
+          config?.image = UIImage(named: "icondotIrregular")
+          self.configuration = config
+        }
+      } else {
+        /// button type custom
+        setImage(UIImage(named: "icondotIrregular"), for: .normal)
+      }
+//      imageEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+      titleLabel?.font = SLStyle.shared.buttonLabel().font
+      setTitleColor(.white, for: .normal)
     case .noneButton:
-      tintColor = .clear
-      titleLabel?.tintColor = .clear
       contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
       backgroundColor = .clear
       updateBorder(width: 0, color: .clear)
