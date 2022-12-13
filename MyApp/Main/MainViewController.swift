@@ -51,7 +51,8 @@ class MainViewController: SLViewController {
     // =================================
     // zeroButton
     // =================================
-    zeroButton.style = .orangeyRedImageTextButton
+    zeroButton.title = "zeroButtonOOO"
+    zeroButton.style = .solidButton
     // =================================
     // firstButton
     // =================================
@@ -78,7 +79,7 @@ class MainViewController: SLViewController {
   @IBAction func didPressed(button: UIButton) {
     switch button {
     case zeroButton:
-//      zeroButton.isSelected = !zeroButton.isSelected
+      zeroButton.isSelected = !zeroButton.isSelected
       viewModel.output.startString = "zeroButton Click!!: \(zeroButton.isSelected)"
     case firstButton:
       firstButton.isSelected = !firstButton.isSelected
