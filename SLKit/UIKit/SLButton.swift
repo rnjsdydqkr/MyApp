@@ -48,8 +48,31 @@ public class SLButton: UIButton {
     }
   }
   
+  public override var isEnabled: Bool {
+    didSet {
+      if isEnabled {
+        updateStyle()
+        imageView?.alpha = 1
+      } else {
+        backgroundColor = backgroundColor?.withAlphaComponent(0.3)
+        imageView?.alpha = 0.3
+      }
+      layoutIfNeeded()
+    }
+  }
+  
+  public override var isHighlighted: Bool {
+    didSet {
+      guard imageView?.image == nil else {
+        imageView?.alpha = isHighlighted ? 0.5 : 1
+        return
+      }
+    }
+  }
+  
   /// button 내부 insets 적용하기 위해서는 button style default 설정 필요
   /// iOS 15.0 이하 버전에서 button image로 만들 시 button type custom 변경 필요
+  /// image button만 기본 UIButton 사용 / 나머지는 style plain에서 default로 변경
   private func updateStyle() {
     tintColor = .clear
     titleLabel?.tintColor = .clear

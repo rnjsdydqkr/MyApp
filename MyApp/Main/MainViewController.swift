@@ -91,9 +91,13 @@ class MainViewController: SLViewController {
       }
     case secondButton:
       viewModel.output.startString = "start Label\nstart Label\nstart Label"
+      zeroButton.isEnabled = true
+      firstButton.isHighlighted = true
     case thirdButton:
       viewModel.output.startString = "[DEV, TEST] requestMainList API 호출"
       viewModel.requestMainList()
+      zeroButton.isEnabled = false
+      firstButton.isHighlighted = false
     default:
       debugPrint("[MainViewController] didPressed default")
     }
