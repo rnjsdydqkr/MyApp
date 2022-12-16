@@ -36,7 +36,7 @@ public class SLButton: UIButton {
     self.style = style
   }
   
-  required public init?(coder: NSCoder) {
+  public required init?(coder: NSCoder) {
     super.init(coder: coder)
     
     self.style = .noneButton
