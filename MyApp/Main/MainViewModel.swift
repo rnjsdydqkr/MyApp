@@ -51,4 +51,16 @@ class MainViewModel: NSObject, MCViewModelProtocol {
     }
   }
   
+  func requestStartService() {
+    SLService.shared.startService()
+  }
+  
+  func requestStopService() {
+    SLService.shared.stopService()
+  }
+  
+  func requestStartSystem() {
+    SLService.shared.requestStartSystem()
+  }
+  
 }

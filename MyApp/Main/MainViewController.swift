@@ -74,6 +74,14 @@ class MainViewController: SLViewController {
     super.viewWillAppear(animated)
     debugPrint("[MainViewController] viewWillAppear")
     
+    viewModel.requestStartService()
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    debugPrint("[MainViewController] viewWillDisappear")
+    
+    viewModel.requestStopService()
   }
   
   @IBAction func didPressed(button: UIButton) {
@@ -93,6 +101,8 @@ class MainViewController: SLViewController {
       viewModel.output.startString = "start Label\nstart Label\nstart Label"
       zeroButton.isEnabled = true
       firstButton.isHighlighted = true
+      
+      viewModel.requestStartSystem()
     case thirdButton:
       viewModel.output.startString = "[DEV, TEST] requestMainList API 호출"
       viewModel.requestMainList()

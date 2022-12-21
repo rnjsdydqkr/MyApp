@@ -38,6 +38,24 @@
 		943222CB281D573500D63DB2 /* APIProvider+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CA281D573500D63DB2 /* APIProvider+Error.swift */; };
 		943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */; };
 		943222CF281D620E00D63DB2 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943222CE281D620E00D63DB2 /* MainAPI.swift */; };
+		944554ED29505E7D00856443 /* SLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554EC29505E7D00856443 /* SLService.swift */; };
+		944554EE29505E7D00856443 /* SLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554EC29505E7D00856443 /* SLService.swift */; };
+		944554EF29505E7D00856443 /* SLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554EC29505E7D00856443 /* SLService.swift */; };
+		944554F12951A97900856443 /* SLRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F02951A97900856443 /* SLRepository.swift */; };
+		944554F22951A97900856443 /* SLRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F02951A97900856443 /* SLRepository.swift */; };
+		944554F32951A97900856443 /* SLRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F02951A97900856443 /* SLRepository.swift */; };
+		944554F62951A9D900856443 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F52951A9D900856443 /* ServiceManager.swift */; };
+		944554F72951A9D900856443 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F52951A9D900856443 /* ServiceManager.swift */; };
+		944554F82951A9D900856443 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F52951A9D900856443 /* ServiceManager.swift */; };
+		944554FA2952C54F00856443 /* SLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F92952C54F00856443 /* SLProvider.swift */; };
+		944554FB2952C54F00856443 /* SLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F92952C54F00856443 /* SLProvider.swift */; };
+		944554FC2952C54F00856443 /* SLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554F92952C54F00856443 /* SLProvider.swift */; };
+		944554FE2952C62800856443 /* SLPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554FD2952C62800856443 /* SLPeripheral.swift */; };
+		944554FF2952C62800856443 /* SLPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554FD2952C62800856443 /* SLPeripheral.swift */; };
+		944555002952C62800856443 /* SLPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944554FD2952C62800856443 /* SLPeripheral.swift */; };
+		944555022952C84100856443 /* ConstantSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944555012952C84100856443 /* ConstantSystem.swift */; };
+		944555032952C84100856443 /* ConstantSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944555012952C84100856443 /* ConstantSystem.swift */; };
+		944555042952C84100856443 /* ConstantSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944555012952C84100856443 /* ConstantSystem.swift */; };
 		94B7595A2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
 		94B7595B2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
 		94B7595C2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
@@ -185,6 +203,12 @@
 		943222CA281D573500D63DB2 /* APIProvider+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Error.swift"; sourceTree = "<group>"; };
 		943222CC281D5D1D00D63DB2 /* APIProvider+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIProvider+Parameters.swift"; sourceTree = "<group>"; };
 		943222CE281D620E00D63DB2 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
+		944554EC29505E7D00856443 /* SLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLService.swift; sourceTree = "<group>"; };
+		944554F02951A97900856443 /* SLRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLRepository.swift; sourceTree = "<group>"; };
+		944554F52951A9D900856443 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		944554F92952C54F00856443 /* SLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLProvider.swift; sourceTree = "<group>"; };
+		944554FD2952C62800856443 /* SLPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLPeripheral.swift; sourceTree = "<group>"; };
+		944555012952C84100856443 /* ConstantSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantSystem.swift; sourceTree = "<group>"; };
 		94B759592934A10B003081D1 /* Repository+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Extensions.swift"; sourceTree = "<group>"; };
 		94B7595D29358B63003081D1 /* SLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLButton.swift; sourceTree = "<group>"; };
 		94D9772629246CF40040B506 /* MyApp DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				94322249281B937000D63DB2 /* MyApp */,
+				944554F42951A9B400856443 /* System */,
 				9432227D281B940B00D63DB2 /* SLKit */,
 				94322263281B937300D63DB2 /* MyAppTests */,
 				9432226D281B937300D63DB2 /* MyAppUITests */,
@@ -444,6 +469,26 @@
 			path = ServerAPI;
 			sourceTree = "<group>";
 		};
+		944554EB29505E5000856443 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				944554EC29505E7D00856443 /* SLService.swift */,
+				944554F02951A97900856443 /* SLRepository.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		944554F42951A9B400856443 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				944554F52951A9D900856443 /* ServiceManager.swift */,
+				944554F92952C54F00856443 /* SLProvider.swift */,
+				944554FD2952C62800856443 /* SLPeripheral.swift */,
+				944555012952C84100856443 /* ConstantSystem.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
 		94D977762924C36E0040B506 /* metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				9432228D281BC2D700D63DB2 /* MVVMProtocol.swift */,
+				944554EB29505E5000856443 /* Service */,
 			);
 			path = features;
 			sourceTree = "<group>";
@@ -876,6 +922,7 @@
 			files = (
 				94322292281BC59700D63DB2 /* MainRepository.swift in Sources */,
 				94F3BFC629274E2200781521 /* SLStyle.swift in Sources */,
+				944554ED29505E7D00856443 /* SLService.swift in Sources */,
 				94EF08A4291E14D0000F0B8B /* RootViewModel.swift in Sources */,
 				943222C7281D409800D63DB2 /* APIProvider.swift in Sources */,
 				9432228B281BB42100D63DB2 /* LoginViewController.swift in Sources */,
@@ -885,9 +932,11 @@
 				94322288281BA96B00D63DB2 /* RootViewControllerProvider.swift in Sources */,
 				943222CB281D573500D63DB2 /* APIProvider+Error.swift in Sources */,
 				94F3BFDC292CA40A00781521 /* SLLabel.swift in Sources */,
+				944554F12951A97900856443 /* SLRepository.swift in Sources */,
 				94322255281B937000D63DB2 /* MyApp.xcdatamodeld in Sources */,
 				94322280281B943F00D63DB2 /* SLViewController.swift in Sources */,
 				94D977782924C8DC0040B506 /* Repository+Enum.swift in Sources */,
+				944554FE2952C62800856443 /* SLPeripheral.swift in Sources */,
 				943222C9281D417000D63DB2 /* APIProvider+Response.swift in Sources */,
 				94B7595A2934A10B003081D1 /* Repository+Extensions.swift in Sources */,
 				943222C1281C431400D63DB2 /* CommUtil.swift in Sources */,
@@ -899,6 +948,9 @@
 				94322282281BA4FF00D63DB2 /* MainViewModel.swift in Sources */,
 				94322290281BC57D00D63DB2 /* MainService.swift in Sources */,
 				9432224D281B937000D63DB2 /* SceneDelegate.swift in Sources */,
+				944555022952C84100856443 /* ConstantSystem.swift in Sources */,
+				944554F62951A9D900856443 /* ServiceManager.swift in Sources */,
+				944554FA2952C54F00856443 /* SLProvider.swift in Sources */,
 				94F3BFCB29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94EF08A8291E4452000F0B8B /* Storyboard+Enum.swift in Sources */,
 				943222CD281D5D1D00D63DB2 /* APIProvider+Parameters.swift in Sources */,
@@ -929,6 +981,7 @@
 			files = (
 				94D9770429246CF40040B506 /* MainRepository.swift in Sources */,
 				94F3BFC729274E2200781521 /* SLStyle.swift in Sources */,
+				944554EE29505E7D00856443 /* SLService.swift in Sources */,
 				94D9770529246CF40040B506 /* RootViewModel.swift in Sources */,
 				94D9770629246CF40040B506 /* APIProvider.swift in Sources */,
 				94D9770729246CF40040B506 /* LoginViewController.swift in Sources */,
@@ -938,9 +991,11 @@
 				94D9770B29246CF40040B506 /* RootViewControllerProvider.swift in Sources */,
 				94D9770C29246CF40040B506 /* APIProvider+Error.swift in Sources */,
 				94F3BFDD292CA40A00781521 /* SLLabel.swift in Sources */,
+				944554F22951A97900856443 /* SLRepository.swift in Sources */,
 				94D9770D29246CF40040B506 /* MyApp.xcdatamodeld in Sources */,
 				94D9770E29246CF40040B506 /* SLViewController.swift in Sources */,
 				94D977792924C8DC0040B506 /* Repository+Enum.swift in Sources */,
+				944554FF2952C62800856443 /* SLPeripheral.swift in Sources */,
 				94D9770F29246CF40040B506 /* APIProvider+Response.swift in Sources */,
 				94B7595B2934A10B003081D1 /* Repository+Extensions.swift in Sources */,
 				94D9771029246CF40040B506 /* CommUtil.swift in Sources */,
@@ -952,6 +1007,9 @@
 				94D9771329246CF40040B506 /* MainViewModel.swift in Sources */,
 				94D9771429246CF40040B506 /* MainService.swift in Sources */,
 				94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */,
+				944555032952C84100856443 /* ConstantSystem.swift in Sources */,
+				944554F72951A9D900856443 /* ServiceManager.swift in Sources */,
+				944554FB2952C54F00856443 /* SLProvider.swift in Sources */,
 				94F3BFCC29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94D9771729246CF40040B506 /* Storyboard+Enum.swift in Sources */,
 				94D9771829246CF40040B506 /* APIProvider+Parameters.swift in Sources */,
@@ -965,6 +1023,7 @@
 			files = (
 				94D9775229246FDD0040B506 /* MainRepository.swift in Sources */,
 				94F3BFC829274E2200781521 /* SLStyle.swift in Sources */,
+				944554EF29505E7D00856443 /* SLService.swift in Sources */,
 				94D9775329246FDD0040B506 /* RootViewModel.swift in Sources */,
 				94D9775429246FDD0040B506 /* APIProvider.swift in Sources */,
 				94D9775529246FDD0040B506 /* LoginViewController.swift in Sources */,
@@ -974,9 +1033,11 @@
 				94D9775929246FDD0040B506 /* RootViewControllerProvider.swift in Sources */,
 				94D9775A29246FDD0040B506 /* APIProvider+Error.swift in Sources */,
 				94F3BFDE292CA40A00781521 /* SLLabel.swift in Sources */,
+				944554F32951A97900856443 /* SLRepository.swift in Sources */,
 				94D9775B29246FDD0040B506 /* MyApp.xcdatamodeld in Sources */,
 				94D9775C29246FDD0040B506 /* SLViewController.swift in Sources */,
 				94D9777A2924C8DC0040B506 /* Repository+Enum.swift in Sources */,
+				944555002952C62800856443 /* SLPeripheral.swift in Sources */,
 				94D9775D29246FDD0040B506 /* APIProvider+Response.swift in Sources */,
 				94B7595C2934A10B003081D1 /* Repository+Extensions.swift in Sources */,
 				94D9775E29246FDD0040B506 /* CommUtil.swift in Sources */,
@@ -988,6 +1049,9 @@
 				94D9776129246FDD0040B506 /* MainViewModel.swift in Sources */,
 				94D9776229246FDD0040B506 /* MainService.swift in Sources */,
 				94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */,
+				944555042952C84100856443 /* ConstantSystem.swift in Sources */,
+				944554F82951A9D900856443 /* ServiceManager.swift in Sources */,
+				944554FC2952C54F00856443 /* SLProvider.swift in Sources */,
 				94F3BFCD29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94D9776529246FDD0040B506 /* Storyboard+Enum.swift in Sources */,
 				94D9776629246FDD0040B506 /* APIProvider+Parameters.swift in Sources */,
