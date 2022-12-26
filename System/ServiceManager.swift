@@ -58,14 +58,12 @@ public class SLServiceManager: NSObject {
       debugPrint("[SLServiceManager] didReceivedObserver - didStopActionData")
       let isSuccess: Bool = notification.userInfo?["isSuccess"] as? Bool ?? false
       let data: String = notification.userInfo?["data"] as? String ?? ""
-      debugPrint("[SLServiceManager] didReceivedObserver - didStopActionData - isSuccess: \(isSuccess)")
-      debugPrint("[SLServiceManager] didReceivedObserver - didStopActionData - data: \(String(describing: data))")
+      debugPrint("[SLServiceManager] didStopActionData - isSuccess: \(isSuccess), data: \(String(describing: data))")
     case .didStopActionDictionary:
       debugPrint("[SLServiceManager] didReceivedObserver - didStopActionDictionary")
       let isSuccess: Bool = notification.userInfo?["isSuccess"] as? Bool ?? false
       let didStopActionDictionary: Dictionary<String, Any>? = notification.userInfo?["didStopActionDictionary"] as? Dictionary<String, Any>
-      debugPrint("[SLServiceManager] didReceivedObserver - didStopActionDictionary - isSuccess: \(isSuccess)")
-      debugPrint("[SLServiceManager] didReceivedObserver - didStopActionDictionary - didStopActionDictionary: \(String(describing: didStopActionDictionary))")
+      debugPrint("[SLServiceManager] didStopActionDictionary - isSuccess: \(isSuccess), didStopActionDictionary: \(String(describing: didStopActionDictionary))")
     default:
       debugPrint("[SLServiceManager] didReceivedObserver - default")
     }
