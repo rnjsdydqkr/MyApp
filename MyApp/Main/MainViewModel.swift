@@ -63,4 +63,41 @@ class MainViewModel: NSObject, MCViewModelProtocol {
     SLService.shared.requestStartSystem()
   }
   
+  private var keyValueObserverList = [NSKeyValueObservation]()
+  func addSystemEventHandler() {
+    keyValueObserverList.append(contentsOf: [
+      SLService.shared.observe(\.connectionsStatus) { [weak self] service, _ in
+        guard let weakSelf = self else { return }
+        switch service.connectionsStatus {
+        case .notConnected:
+          debugPrint("[MainViewModel] notConnected")
+        case .searching:
+          debugPrint("[MainViewModel] searching")
+        case .connecting:
+          debugPrint("[MainViewModel] connecting")
+        case .connected:
+          debugPrint("[MainViewModel] connected")
+        case .sendData:
+          debugPrint("[MainViewModel] sendData")
+        case .diableBLE:
+          debugPrint("[MainViewModel] diableBLE")
+        }
+      },
+      SLService.shared.connectedSystem.observe(\.batteryStatus) { [weak self] object, _ in
+        switch object.batteryStatus {
+        case .ready:
+          debugPrint("[MainViewModel] ready")
+        case .chargeProgress:
+          debugPrint("[MainViewModel] chargeProgress")
+        case .chargeDone:
+          debugPrint("[MainViewModel] chargeDone")
+        case .fault:
+          debugPrint("[MainViewModel] fault")
+        case .unknown:
+          debugPrint("[MainViewModel] unknown")
+        }
+      }
+    ])
+  }
+  
 }

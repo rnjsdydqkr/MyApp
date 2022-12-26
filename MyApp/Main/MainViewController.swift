@@ -75,6 +75,7 @@ class MainViewController: SLViewController {
     debugPrint("[MainViewController] viewWillAppear")
     
     viewModel.requestStartService()
+    viewModel.addSystemEventHandler()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
