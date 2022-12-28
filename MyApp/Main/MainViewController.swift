@@ -74,14 +74,13 @@ class MainViewController: SLViewController {
     super.viewWillAppear(animated)
     debugPrint("[MainViewController] viewWillAppear")
     
-    viewModel.requestStartService()
     viewModel.addSystemEventHandler()
+    viewModel.requestStartService()
   }
   
-  override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-    debugPrint("[MainViewController] viewWillDisappear")
-    
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    debugPrint("[MainViewController] viewDidDisappear")
     viewModel.requestStopService()
   }
   
@@ -100,15 +99,17 @@ class MainViewController: SLViewController {
       }
     case secondButton:
       viewModel.output.startString = "start Label\nstart Label\nstart Label"
-      zeroButton.isEnabled = true
-      firstButton.isHighlighted = true
+//      zeroButton.isEnabled = true
+//      firstButton.isHighlighted = true
       
       viewModel.requestStartSystem()
+      
     case thirdButton:
       viewModel.output.startString = "[DEV, TEST] requestMainList API 호출"
       viewModel.requestMainList()
-      zeroButton.isEnabled = false
-      firstButton.isHighlighted = false
+//      zeroButton.isEnabled = false
+//      firstButton.isHighlighted = false
+      
     default:
       debugPrint("[MainViewController] didPressed default")
     }

@@ -30,7 +30,7 @@ public class SLServiceManager: NSObject {
   }
   
   public func stopService() {
-    self.stopService()
+    self.stopObservation()
   }
   
   private func startObservation() {
