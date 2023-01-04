@@ -36,6 +36,30 @@ public struct UserDefault<Value> {
   }
 }
 
+@propertyWrapper
+public struct UserDefaultWrapper<Value: Codable> {
+  let key: String
+  var container: UserDefaults = .standard
+  
+  public var wrappedValue: Value? {
+    get {
+      if let savedObjectData = container.object(forKey: key) as? Data {
+        let decoder = JSONDecoder()
+        if let decodedObject = try? decoder.decode(Value.self, from: savedObjectData) {
+          return decodedObject
+        }
+      }
+      return nil
+    }
+    set {
+      let encoder = JSONEncoder()
+      if let encodedObject = try? encoder.encode(newValue) {
+        container.setValue(encodedObject, forKey: key)
+      }
+    }
+  }
+}
+
 public class SLUserDefaults {
   public static let standard: SLUserDefaults = SLUserDefaults()
   
@@ -43,7 +67,7 @@ public class SLUserDefaults {
   
   private init() {}
   
-  // MARK: - Setting UserDefaults
+  // MARK: - Setting UserDefaults - Base Type
   @UserDefault(key: "system_no")
   public var systemNo: Int?
   
@@ -52,6 +76,10 @@ public class SLUserDefaults {
   
   @UserDefault(key: "current_lang")
   public var currentLang: String?
+  
+  // MARK: - Setting UserDefaults - Object Type
+  @UserDefaultWrapper(key: "popular_movie_info")
+  public var popularMovieInfo: PopularMovieInfoResponse?
   
   public func clearData() {
     systemNo = nil
