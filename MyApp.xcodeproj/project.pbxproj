@@ -59,6 +59,12 @@
 		94455507295A88A600856443 /* SLUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94455506295A88A600856443 /* SLUserDefaults.swift */; };
 		94455508295A88A600856443 /* SLUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94455506295A88A600856443 /* SLUserDefaults.swift */; };
 		94455509295A88A600856443 /* SLUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94455506295A88A600856443 /* SLUserDefaults.swift */; };
+		94B1513B29653A150091268D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1513A29653A150091268D /* UserInfo.swift */; };
+		94B1513C29653A150091268D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1513A29653A150091268D /* UserInfo.swift */; };
+		94B1513D29653A150091268D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1513A29653A150091268D /* UserInfo.swift */; };
+		94B1513F29653A640091268D /* SLRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1513E29653A640091268D /* SLRealm.swift */; };
+		94B1514029653A640091268D /* SLRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1513E29653A640091268D /* SLRealm.swift */; };
+		94B1514129653A640091268D /* SLRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1513E29653A640091268D /* SLRealm.swift */; };
 		94B7595A2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
 		94B7595B2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
 		94B7595C2934A10B003081D1 /* Repository+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B759592934A10B003081D1 /* Repository+Extensions.swift */; };
@@ -213,6 +219,8 @@
 		944554FD2952C62800856443 /* SLPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLPeripheral.swift; sourceTree = "<group>"; };
 		944555012952C84100856443 /* ConstantSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantSystem.swift; sourceTree = "<group>"; };
 		94455506295A88A600856443 /* SLUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLUserDefaults.swift; sourceTree = "<group>"; };
+		94B1513A29653A150091268D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		94B1513E29653A640091268D /* SLRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLRealm.swift; sourceTree = "<group>"; };
 		94B759592934A10B003081D1 /* Repository+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Extensions.swift"; sourceTree = "<group>"; };
 		94B7595D29358B63003081D1 /* SLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLButton.swift; sourceTree = "<group>"; };
 		94D9772629246CF40040B506 /* MyApp DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyApp DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -497,9 +505,27 @@
 		94455505295A887000856443 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				94B15138296539CA0091268D /* Database */,
 				94455506295A88A600856443 /* SLUserDefaults.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		94B15138296539CA0091268D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				94B15139296539E10091268D /* Model */,
+				94B1513E29653A640091268D /* SLRealm.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		94B15139296539E10091268D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94B1513A29653A150091268D /* UserInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		94D977762924C36E0040B506 /* metadata */ = {
@@ -964,6 +990,8 @@
 				9432224D281B937000D63DB2 /* SceneDelegate.swift in Sources */,
 				944555022952C84100856443 /* ConstantSystem.swift in Sources */,
 				944554F62951A9D900856443 /* ServiceManager.swift in Sources */,
+				94B1513B29653A150091268D /* UserInfo.swift in Sources */,
+				94B1513F29653A640091268D /* SLRealm.swift in Sources */,
 				944554FA2952C54F00856443 /* SLProvider.swift in Sources */,
 				94F3BFCB29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94EF08A8291E4452000F0B8B /* Storyboard+Enum.swift in Sources */,
@@ -1024,6 +1052,8 @@
 				94D9771629246CF40040B506 /* SceneDelegate.swift in Sources */,
 				944555032952C84100856443 /* ConstantSystem.swift in Sources */,
 				944554F72951A9D900856443 /* ServiceManager.swift in Sources */,
+				94B1513C29653A150091268D /* UserInfo.swift in Sources */,
+				94B1514029653A640091268D /* SLRealm.swift in Sources */,
 				944554FB2952C54F00856443 /* SLProvider.swift in Sources */,
 				94F3BFCC29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94D9771729246CF40040B506 /* Storyboard+Enum.swift in Sources */,
@@ -1067,6 +1097,8 @@
 				94D9776429246FDD0040B506 /* SceneDelegate.swift in Sources */,
 				944555042952C84100856443 /* ConstantSystem.swift in Sources */,
 				944554F82951A9D900856443 /* ServiceManager.swift in Sources */,
+				94B1513D29653A150091268D /* UserInfo.swift in Sources */,
+				94B1514129653A640091268D /* SLRealm.swift in Sources */,
 				944554FC2952C54F00856443 /* SLProvider.swift in Sources */,
 				94F3BFCD29277FF200781521 /* UIFont+Enum.swift in Sources */,
 				94D9776529246FDD0040B506 /* Storyboard+Enum.swift in Sources */,

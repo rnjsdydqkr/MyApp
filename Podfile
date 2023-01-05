@@ -3,6 +3,8 @@
 
 def shared_pods
   pod 'Alamofire', '5.6.2'
+#  pod 'RealmSwift', '~>10', :modular_headers => true
+#  pod 'Realm', '~>10', :modular_headers => true
 end
 
 target 'MyApp' do

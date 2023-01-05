@@ -16,6 +16,8 @@ class MainViewController: SLViewController {
   @IBOutlet private var secondButton: SLButton!
   @IBOutlet private var thirdButton: SLButton!
   
+//  var userInfoModel = UserInfo(name: "김김김", status: "시도")
+  
   let viewModel = MainViewModel()
   
   override func setupObserver() {
@@ -89,6 +91,10 @@ class MainViewController: SLViewController {
     case zeroButton:
       zeroButton.isSelected = !zeroButton.isSelected
       viewModel.output.startString = "zeroButton Click!!: \(zeroButton.isSelected)"
+      
+//      SLUserDefaults.standard.systemNo = 852741
+//      SLUserDefaults.standard.systemNo = nil
+//      SLRealm.standard.createObject(object: userInfoModel)
     case firstButton:
       firstButton.isSelected = !firstButton.isSelected
       if firstButton.isSelected {
@@ -97,6 +103,8 @@ class MainViewController: SLViewController {
       } else {
         viewModel.output.startString = "firstButton Click!!: \(firstButton.isSelected)"
       }
+      
+//      SLRealm.standard.loadObject(object: userInfoModel, sortName: userInfoModel.name, ascending: true)
     case secondButton:
       viewModel.output.startString = "start Label\nstart Label\nstart Label"
 //      zeroButton.isEnabled = true
@@ -104,12 +112,14 @@ class MainViewController: SLViewController {
       
       viewModel.requestStartSystem()
       
+//      SLRealm.standard.retrieveObject(object: userInfoModel)
+      
     case thirdButton:
       viewModel.output.startString = "[DEV, TEST] requestMainList API 호출"
       viewModel.requestMainList()
 //      zeroButton.isEnabled = false
 //      firstButton.isHighlighted = false
-      
+//      SLRealm.standard.deleteObject(object: userInfoModel)
     default:
       debugPrint("[MainViewController] didPressed default")
     }
