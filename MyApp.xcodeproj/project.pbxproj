@@ -321,6 +321,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		940150CB29E6449E0006E743 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9432224A281B937000D63DB2 /* AppDelegate.swift */,
+				9432224C281B937000D63DB2 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		9432223E281B937000D63DB2 = {
 			isa = PBXGroup;
 			children = (
@@ -355,8 +364,7 @@
 				94EF08A12919DAD2000F0B8B /* features */,
 				94322289281BB40200D63DB2 /* Login */,
 				94322285281BA6AE00D63DB2 /* Main */,
-				9432224A281B937000D63DB2 /* AppDelegate.swift */,
-				9432224C281B937000D63DB2 /* SceneDelegate.swift */,
+				940150CB29E6449E0006E743 /* Delegate */,
 				94EF08A2291E148C000F0B8B /* Root */,
 				94322293281BCDCB00D63DB2 /* resource */,
 				943222C4281D405C00D63DB2 /* Repository */,

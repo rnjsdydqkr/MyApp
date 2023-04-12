@@ -77,6 +77,9 @@ public class SLUserDefaults {
   @UserDefault(key: "current_lang")
   public var currentLang: String?
   
+  @UserDefault(key: "font_size")
+  public var fontSize: Int?
+  
   // MARK: - Setting UserDefaults - Object Type
   @UserDefaultWrapper(key: "popular_movie_info")
   public var popularMovieInfo: PopularMovieInfoResponse?
