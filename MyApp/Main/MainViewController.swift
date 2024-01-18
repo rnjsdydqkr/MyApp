@@ -45,9 +45,9 @@ class MainViewController: SLViewController {
     
     topLabel.skFont = SLStyle.shared.body(style: .regular)
     topLabel.text = I18N.common_confirm_button
+    topLabel.skFont.font = topLabel.customFontStyle(style: FontStyle.JetBrainsMonoMedium.name)
     topLabel.change(targetString: "확", font: SLStyle.shared.title())
     topLabel.change(targetString: "인", color: .clearBlue)
-    topLabel.font = topLabel.customFontStyle(style: FontStyle.JetBrainsMonoMedium.name)
     
     // Button Test
     // =================================
